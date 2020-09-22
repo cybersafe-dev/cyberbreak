@@ -1,5 +1,5 @@
 export const surveyContent = {
-  q1: {
+  1: {
     statement:
       "Have you discussed as a family the rules of how children use the internet?",
     a1: {
@@ -15,15 +15,15 @@ export const surveyContent = {
       points: 3,
     },
     a4: {
-      answer: "No, we haven’t done that yet (bottom level)",
+      answer: "No, we haven’t done that yet",
       points: 0,
     },
   },
-  q2: {
+  2: {
     statement:
-      "We have parental controls that restrict or block access to unhealthy sites.",
+      "We have parental controls that restrict or block access to unhealthy sites",
     a1: {
-      answer: "Yes and we’re confident of how to use them.",
+      answer: "Yes and we’re confident of how to use them",
       points: 2,
     },
     a2: {
@@ -32,11 +32,11 @@ export const surveyContent = {
     },
     a3: {
       answer:
-        "We have some restrictions in place but aren’t sure if it’s enough.",
+        "We have some restrictions in place but aren’t sure if it’s enough",
       points: 1,
     },
   },
-  q3: {
+  3: {
     statement:
       "In our family, all of our online accounts and profiles (i.e. social media) are set to private.",
     a1: {
@@ -56,7 +56,7 @@ export const surveyContent = {
       points: 1,
     },
   },
-  q4: {
+  4: {
     statement:
       "We all understand what GPS & location settings are and how to turn them off.",
     a1: {
@@ -76,7 +76,7 @@ export const surveyContent = {
       points: 1,
     },
   },
-  q5: {
+  5: {
     statement:
       "We have clear rules around online use and access for kids (for example, no devices in bedrooms, no devices at mealtimes).",
     a1: {
@@ -92,7 +92,7 @@ export const surveyContent = {
       points: 1,
     },
   },
-  q6: {
+  6: {
     statement:
       "We talk about what we see and do online, and sometimes we watch or do stuff together online.",
     a1: {
@@ -108,7 +108,7 @@ export const surveyContent = {
       points: 1,
     },
   },
-  q7: {
+  7: {
     statement:
       "As a family we have discussed what to do when someone bullies us online.",
     a1: {
@@ -124,7 +124,7 @@ export const surveyContent = {
       points: 1,
     },
   },
-  q8: {
+  8: {
     statement:
       "As a family we have discussed what to do if we see other people bullying someone online.",
     a1: {
@@ -141,7 +141,7 @@ export const surveyContent = {
       points: 1,
     },
   },
-  q9: {
+  9: {
     statement:
       "As a family, we have talked about the fact that some content online is not appropriate for children and age restrictions are important.",
     a1: {
@@ -157,7 +157,7 @@ export const surveyContent = {
       points: 1,
     },
   },
-  q10: {
+  10: {
     statement:
       "I am confident that our children know that if they ever encounter something online that bothers them that they will come to talk to us.",
     a1: {
