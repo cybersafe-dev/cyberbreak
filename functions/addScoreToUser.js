@@ -3,7 +3,7 @@ var Airtable = require("airtable");
 exports.handler = async (event) => {
   const { uid, finalScore } = JSON.parse(event.body);
   var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
-    "applnhFkWhSAQIvg7"
+    process.env.AIRTABLE_BASE_ID
   );
 
   base("users")

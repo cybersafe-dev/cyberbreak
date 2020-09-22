@@ -28,7 +28,7 @@ const Thankyou = () => {
       const uid = sessionStorage.getItem("uid");
       fetch(`/.netlify/functions/addScoreToUser`, {
         method: "POST",
-        body: uid,
+        body: JSON.stringify({ uid: uid, finalScore: finalScore }),
       })
         .json()
         .then((data) => {

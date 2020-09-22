@@ -4,7 +4,7 @@ exports.handler = async (event) => {
   const { email, name } = JSON.parse(event.body);
 
   var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
-    "applnhFkWhSAQIvg7"
+    process.env.AIRTABLE_BASE_ID
   );
 
   base("users")
@@ -19,7 +19,7 @@ exports.handler = async (event) => {
     .then((records) => {
       records.forEach(function (record) {
         const uid = record.getId();
-        console.log("new uid -->", uid)
+        console.log("new uid -->", uid);
         return {
           statusCode: 200,
           body: uid,
