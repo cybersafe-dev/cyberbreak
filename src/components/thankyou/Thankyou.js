@@ -25,7 +25,16 @@ const Thankyou = () => {
 
   React.useEffect(() => {
     if (finalScore) {
-      // post final score to database via stored UID.
+      const uid = sessionStorage.getItem("uid");
+      fetch(`/.netlify/functions/addScoreToUser`, {
+        method: "POST",
+        body: uid,
+      })
+        .json()
+        .then((data) => {
+          console.log(data);
+        })
+        .catch(console.error);
     }
     // eslint-disable-next-line
   }, []);

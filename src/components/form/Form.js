@@ -14,11 +14,18 @@ const Form = (props) => {
     }));
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    // post form data to airtable
-    // store a UID in session or local storage.
-    props.history.push("/survey");
+    await fetch(`/.netlify/functions/createUser`, {
+      method: "POST",
+      body: JSON.stringify(formValues),
+    })
+      .json()
+      .then((data) => {
+        sessionStorage.setItem("uid", data);
+      }).then(() => props.history.push("/survey"))
+      .catch(console.error);
+    
   };
 
   return (
