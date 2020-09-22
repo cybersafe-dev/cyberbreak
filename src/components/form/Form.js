@@ -17,7 +17,7 @@ const Form = (props) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     // post form data to airtable
-    props.history.push("/");
+    props.history.push("/survey");
   };
 
   return (
