@@ -20,12 +20,12 @@ const Form = (props) => {
       method: "POST",
       body: JSON.stringify(formValues),
     })
-      .json()
+      .then((res) => res.json())
       .then((data) => {
         sessionStorage.setItem("uid", data);
-      }).then(() => props.history.push("/survey"))
+      })
+      .then(() => props.history.push("/survey"))
       .catch(console.error);
-    
   };
 
   return (

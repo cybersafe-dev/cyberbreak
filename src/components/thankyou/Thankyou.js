@@ -30,7 +30,7 @@ const Thankyou = () => {
         method: "POST",
         body: JSON.stringify({ uid: uid, finalScore: finalScore }),
       })
-        .json()
+        .then(res => res.json())
         .then((data) => {
           console.log(data);
         })
