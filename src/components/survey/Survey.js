@@ -1,5 +1,6 @@
 import React from "react";
 import { surveyContent } from "../../utils/surveyContent";
+//import Thankyou from "../thankyou/Thankyou";
 
 const Survey = (props) => {
   const [currentQuestion, setCurrentQuestion] = React.useState(1);
@@ -9,15 +10,20 @@ const Survey = (props) => {
     sessionStorage.setItem("scores", JSON.stringify(scores));
   }, [scores]);
 
+  React.useEffect(() => {
+    if (currentQuestion > 10) {
+      props.history.push("/thankyou");
+    }
+    // eslint-disable-next-line
+  }, [currentQuestion]);
+
   const goToNextQuestion = (e) => {
     const { value } = e.target;
     setScores([...scores, parseInt(value)]);
     setCurrentQuestion(() => currentQuestion + 1);
   };
 
-  if (currentQuestion > 10) {
-    props.history.push("/thankyou");
-  } else if (currentQuestion === 1) {
+  if (currentQuestion === 1) {
     sessionStorage.setItem("scores", []);
   }
 
@@ -29,7 +35,7 @@ const Survey = (props) => {
     <main>
       <h1>Survey</h1>
       <h2>
-        {currentQuestion} {surveyContent[currentQuestion].statement}
+        {currentQuestion}. {surveyContent[currentQuestion].statement}
       </h2>
       {surveyContent[currentQuestion].a1 ? (
         <button
@@ -63,6 +69,7 @@ const Survey = (props) => {
           d. {surveyContent[currentQuestion].a4.answer}
         </button>
       ) : null}
+      <p>{currentQuestion}/10</p>
     </main>
   );
 };
