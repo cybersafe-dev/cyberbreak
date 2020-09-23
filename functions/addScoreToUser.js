@@ -9,13 +9,14 @@ exports.handler = (event, context, callback) => {
   );
 
   let response;
+  const finalScoreString = finalScore.toString()
 
   base("users").update(
     [
       {
         id: uid,
         fields: {
-          score: finalScore,
+          score: finalScoreString,
         },
       },
     ],
