@@ -43,7 +43,7 @@ const Thankyou = () => {
   return (
     <main>
       <h1>Score Card</h1>
-      <h2>Your Score: {finalScore}</h2>
+      <h2>{finalScore}</h2>
       <p>{scoreBlurb}</p>
       <p>
         Thank you for taking part in Cyber Break! You can close this window now.
