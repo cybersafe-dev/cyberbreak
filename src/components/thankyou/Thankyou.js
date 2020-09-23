@@ -26,6 +26,7 @@ const Thankyou = () => {
   React.useEffect(() => {
     if (finalScore) {
       const uid = sessionStorage.getItem("uid");
+      console.log({uid})
       fetch(`/.netlify/functions/addScoreToUser`, {
         method: "POST",
         body: JSON.stringify({ uid: uid, finalScore: finalScore }),

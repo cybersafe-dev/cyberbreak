@@ -20,8 +20,9 @@ const Form = (props) => {
       method: "POST",
       body: JSON.stringify(formValues),
     })
-      .then((res) => res.json())
+      .then(res => res.json())
       .then((data) => {
+        console.log(data)
         sessionStorage.setItem("uid", data);
       })
       .then(() => props.history.push("/survey"))
