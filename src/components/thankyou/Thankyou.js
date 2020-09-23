@@ -4,7 +4,7 @@ import { scoreBlurbs } from "../../utils/scoreBlurbs";
 const Thankyou = () => {
   const scores = JSON.parse(sessionStorage.getItem("scores"));
 
-  const finalScore = scores.reduce((acc, num) => {
+  let finalScore = scores.reduce((acc, num) => {
     return acc + num;
   });
 
@@ -24,18 +24,18 @@ const Thankyou = () => {
   }
 
   React.useEffect(() => {
-    if (finalScore) {
+    if (finalScore || finalScore === 0) {
       const uid = sessionStorage.getItem("uid");
-      console.log({uid})
       fetch(`/.netlify/functions/addScoreToUser`, {
         method: "POST",
         body: JSON.stringify({ uid: uid, finalScore: finalScore }),
       })
-        .then(res => res.json())
-        .then((data) => {
-          console.log(data);
-        })
-        .catch(console.error);
+        // debug logs
+        // .then(res => res.json())
+        // .then((data) => {
+        //   console.log(data)
+        //  })
+        // .catch(console.error);
     }
     // eslint-disable-next-line
   }, []);
@@ -48,7 +48,7 @@ const Thankyou = () => {
       <p>
         Thank you for taking part in Cyber Break! You can close this window now.
       </p>
-      <a href="https://cybersafeireland.org">CyberSafeIreland Homepage</a>
+      <a href="https://cybersafeireland.org">CyberSafeIreland</a>
     </main>
   );
 };

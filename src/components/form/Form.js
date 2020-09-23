@@ -20,12 +20,11 @@ const Form = (props) => {
       method: "POST",
       body: JSON.stringify(formValues),
     })
-      .then(res => res.json())
+      .then((res) => res.json())
       .then((data) => {
-        console.log(data)
         sessionStorage.setItem("uid", data);
       })
-      .then(() => props.history.push("/survey"))
+      .then(() => props.history.push("/interstitial"))
       .catch(console.error);
   };
 
@@ -43,7 +42,7 @@ const Form = (props) => {
           <input
             type="text"
             id="name"
-            placeholder="Enter your name"
+            placeholder="enter name"
             value={formValues.name}
             onChange={handleChange}
           />
@@ -52,9 +51,9 @@ const Form = (props) => {
         <label htmlFor="email">
           Please enter your email address
           <input
-            type="text"
+            type="email"
             id="email"
-            placeholder="Enter your email"
+            placeholder="enter email"
             value={formValues.email}
             onChange={handleChange}
           />
@@ -63,6 +62,13 @@ const Form = (props) => {
           Unlock!
         </button>
       </form>
+      <a
+        href="https://cybersafeireland.org/privacy-policy-and-data-protection"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        privacy policy
+      </a>
     </main>
   );
 };

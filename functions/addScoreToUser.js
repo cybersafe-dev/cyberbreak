@@ -3,13 +3,13 @@ var Airtable = require("airtable");
 exports.handler = (event, context, callback) => {
   const { uid, finalScore } = JSON.parse(event.body);
 
-  console.log("in function", uid, finalScore)
+  console.log("in function", uid, finalScore);
   var base = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY }).base(
     process.env.AIRTABLE_BASE_ID
   );
 
   let response;
-  const finalScoreString = finalScore.toString()
+  let finalScoreString = finalScore.toString();
 
   base("users").update(
     [
@@ -30,7 +30,7 @@ exports.handler = (event, context, callback) => {
             "Access-Control-Allow-Methods": "*",
           },
         };
-        callback(null, response)
+        callback(null, response);
       }
       records.forEach(function (record) {
         console.log("updated", record.get("name"));
