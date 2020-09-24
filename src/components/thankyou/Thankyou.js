@@ -72,13 +72,13 @@ const Thankyou = () => {
       fetch(`/.netlify/functions/addScores`, {
         method: "POST",
         body: JSON.stringify({ scores: scores }),
-      })
-        // debug logs
-        // .then((res) => res.json())
-        // .then((data) => {
-        //   console.log(data);
-        // })
-        // .catch(console.error);
+      });
+      // debug logs
+      // .then((res) => res.json())
+      // .then((data) => {
+      //   console.log(data);
+      // })
+      // .catch(console.error);
     }
     // eslint-disable-next-line
   }, []);
@@ -89,11 +89,12 @@ const Thankyou = () => {
       <h2>{finalScorePercent(finalScore)}%</h2>
       <p>{scoreBlurb}</p>
       <p>
-        Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber Break!
+        Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber
+        Break!
       </p>
       <p>
-        If you would like to subscribe to our email list please enter your
-        address below.
+        If you would like to subscribe to our email list please enter your email
+        address and click 'Subscribe' below.
       </p>
       <form>
         <label htmlFor="email">
