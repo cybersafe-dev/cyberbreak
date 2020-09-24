@@ -1,5 +1,6 @@
 body {
   background-color: #6C8CFE;
+  margin: 0;
 }
 
 /* HEADER */
@@ -7,6 +8,7 @@ body {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  width:100%;
 }
 .sun {
 z-index: -1;
@@ -36,6 +38,7 @@ position: fixed;
 }
 .landing-text {
   width: 40rem;
+  line-height: 2rem;
 }
 .btn {
   background-color: #6C8CFE;
@@ -48,5 +51,12 @@ position: fixed;
   bottom: 0;
   right: 0;
   position: fixed;
-  margin: 0 4rem 4rem 0; 
+  margin: 0 4rem 4rem 0;
+}
+.ptsb-logo {
+  bottom: 1rem;
+  left: 1rem;
+  position: fixed;
+
+
 }
