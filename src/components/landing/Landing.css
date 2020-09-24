@@ -1,0 +1,57 @@
+.landing-container {
+  background-color: #6C8CFE;
+  width: 100vw;
+  height: 100vh;
+}
+.landing-title {
+  margin: 0 0 0 5rem;
+}
+.landing-text {
+  width: 40rem;
+  line-height: 2rem;
+  margin: 0 0 0 5rem;
+}
+.btn {
+  background-color: #6C8CFE;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  color: white;
+  box-shadow: -4px -4px 12px 0px #9BB1FF, 6px 6px 12px 0px #466FFF;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 0 4rem 4rem 0;
+}
+.ptsb-logo {
+  bottom: 1rem;
+  left: 1rem;
+  position: fixed;
+}
+
+/*------- HEADER --------*/
+.landing-header {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width:100%;
+}
+.sun {
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+  position: fixed;
+}
+.clouds {
+  z-index: 2;
+  animation: 35s infinite alternate slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
