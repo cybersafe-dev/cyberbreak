@@ -3,17 +3,17 @@ import { scoreBlurbs } from "../../utils/scoreBlurbs";
 
 const Thankyou = () => {
   const scores = JSON.parse(sessionStorage.getItem("scores"));
-  const [email, setEmail] = React.useState("")
-  const [error, setError] = React.useState("")
-  const [message, setMessage] = React.useState("")
+  const [email, setEmail] = React.useState("");
+  const [error, setError] = React.useState("");
+  const [message, setMessage] = React.useState("");
 
   let finalScore = scores.reduce((acc, num) => {
     return acc + num;
   });
 
   let finalScorePercent = (finalScore) => {
-    return Math.round(finalScore * 100 / 23)
-  }
+    return Math.round((finalScore * 100) / 23);
+  };
 
   let scoreBlurb = "";
   switch (true) {
@@ -43,7 +43,9 @@ const Thankyou = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          setMessage("Thanks for subscribing...We're glad you want to keep on top of your online safety!")
+          setMessage(
+            "Thanks for subscribing...We're glad you want to keep on top of your online safety!"
+          );
           console.log(data);
         })
         .catch(console.error);
@@ -72,12 +74,12 @@ const Thankyou = () => {
         method: "POST",
         body: JSON.stringify({ scores: scores }),
       })
-      // debug logs
-      .then(res => res.json())
-      .then((data) => {
-        console.log(data)
-       })
-      .catch(console.error);
+        // debug logs
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch(console.error);
     }
     // eslint-disable-next-line
   }, []);
@@ -88,11 +90,14 @@ const Thankyou = () => {
       <h2>{finalScorePercent(finalScore)}%</h2>
       <p>{scoreBlurb}</p>
       <p>
-        Thanks for taking part in Cyber Break! If you would like to subscribe to
-        our email list please enter your address below.
+        Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber Break!
+      </p>
+      <p>
+        If you would like to subscribe to our email list please enter your
+        address below.
       </p>
       <form>
-      <label htmlFor="email">
+        <label htmlFor="email">
           Please enter your email address
           <input
             type="email"

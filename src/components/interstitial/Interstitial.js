@@ -9,7 +9,7 @@ const Interstitial = (props) => {
   }, []);
   return (
     <main>
-      <p>The quiz will begin any moment</p>
+      <p>The quiz will begin any moment...</p>
       <p>Choose the answers that best fit your family!</p>
     </main>
   );
