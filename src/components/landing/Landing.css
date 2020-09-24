@@ -1,0 +1,51 @@
+body {
+  background-color: #6C8CFE;
+}
+
+/* HEADER */
+.landing-header {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.sun {
+z-index: -1;
+top: 1rem;
+right: 1rem;
+position: fixed;
+}
+.clouds {
+  animation: 20s infinite alternate slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/* LANDING PAGE */
+.landing-container {
+  margin-left: 5rem;
+}
+.landing-title {
+  /* margin-left: 5rem; */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.landing-text {
+  width: 40rem;
+}
+.btn {
+  background-color: #6C8CFE;
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  box-shadow: -4px -4px 12px 0px #9BB1FF, 6px 6px 12px 0px #466FFF;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  margin: 3rem;
+}

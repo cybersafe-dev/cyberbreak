@@ -1,0 +1,14 @@
+h1 {
+  font-family: 'Knewave', cursive;
+  color: white;
+  font-size: 6rem;
+}
+p {
+  font-family: 'Varela Round', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.btn {
+    font-family: 'Knewave', cursive;
+}
