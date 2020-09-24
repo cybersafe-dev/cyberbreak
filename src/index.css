@@ -2,18 +2,6 @@ body {
   margin: 0;
 }
 
-main {
-  box-sizing: border-box;
-}
-
-h1 {
-  color: white;
-}
-
-p {
-  color: white;
-}
-
 label {
   display: none;
 }
@@ -24,4 +12,24 @@ input {
   padding: 1rem;
   font-size: 2rem;
   width: 25vw;
+}
+
+input::placeholder {
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-family: "Knewave", cursive;
+  color: white;
+  font-size: 6rem;
+  font-weight: lighter;
+}
+p {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn {
+  font-family: "Knewave", cursive;
 }

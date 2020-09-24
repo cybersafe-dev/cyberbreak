@@ -2,6 +2,7 @@ import React from "react";
 import "./Form.css";
 import Lockchain from "../../assets/images/lockchain.svg"
 
+
 const Form = (props) => {
   const [name, setName] = React.useState("");
 
