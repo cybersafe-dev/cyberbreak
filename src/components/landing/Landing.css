@@ -1,44 +1,15 @@
-body {
-  background-color: #6C8CFE;
-  margin: 0;
-}
-
-/* HEADER */
-.landing-header {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  width:100%;
-}
-.sun {
-z-index: -1;
-top: 1rem;
-right: 1rem;
-position: fixed;
-}
-.clouds {
-  animation: 30s infinite alternate slidein;
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-
-/* LANDING PAGE */
 .landing-container {
-  margin-left: 5rem;
+  background-color: #6C8CFE;
+  width: 100vw;
+  height: 100vh;
 }
 .landing-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0 0 5rem;
 }
 .landing-text {
   width: 40rem;
   line-height: 2rem;
+  margin: 0 0 0 5rem;
 }
 .btn {
   background-color: #6C8CFE;
@@ -57,6 +28,30 @@ position: fixed;
   bottom: 1rem;
   left: 1rem;
   position: fixed;
+}
 
-
+/*------- HEADER --------*/
+.landing-header {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width:100%;
+}
+.sun {
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+  position: fixed;
+}
+.clouds {
+  z-index: 2;
+  animation: 35s infinite alternate slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }

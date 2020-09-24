@@ -1,4 +1,5 @@
 import React from "react";
+import "./form.css"
 
 const Form = (props) => {
   const [formValues, setFormValues] = React.useState({
