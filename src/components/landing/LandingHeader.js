@@ -1,6 +1,6 @@
 import React from "react";
-import Clouds from "../../images/clouds.svg"
-import Sun from "../../images/sun-logo.svg"
+import Clouds from "../../images/cloud-logo.svg"
+import Sun from "../../images/sun.svg"
 
 import "./Landing.css"
 
