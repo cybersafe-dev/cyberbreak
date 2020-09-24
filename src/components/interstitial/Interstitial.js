@@ -7,7 +7,12 @@ const Interstitial = (props) => {
     }, 3000);
     // eslint-disable-next-line
   }, []);
-  return <p>Choose the answer that best fits your family!</p>;
+  return (
+    <main>
+      <p>The quiz will begin any moment...</p>
+      <p>Choose the answers that best fit your family!</p>
+    </main>
+  );
 };
 
 export default Interstitial;
