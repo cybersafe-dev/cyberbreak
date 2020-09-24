@@ -6,18 +6,6 @@ label {
   display: none;
 }
 
-input {
-  border: none;
-  background-color: white;
-  padding: 1rem;
-  font-size: 2rem;
-  width: 25vw;
-}
-
-input::placeholder {
-  font-family: "Varela Round", sans-serif;
-}
-
 h1 {
   font-family: "Knewave", cursive;
   color: white;
