@@ -1,0 +1,75 @@
+.page-container {
+  background-color: #ff9a6f;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.hidden {
+  display: none;
+}
+
+.name-entry {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.explainer {
+  max-width: 50vw;
+  font-size: 2rem;
+  font-family: arial, sans-serif;
+}
+
+form {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.unlock-btn {
+  background-color: #ff9a6f;
+  filter: drop-shadow(6px 6px 12px #ff7c44) drop-shadow(-4px -4px 12px #ffbb9e);
+  color: white;
+  border-radius: 20px;
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+  border: none;
+  align-self: flex-end;
+}
+
+.lock {
+  width: 20vw;
+  position: fixed;
+  top: 20vh;
+  right: 12.5vw;
+  z-index: 2;
+}
+
+.chain {
+  width: 60vw;
+
+  position: fixed;
+  top: -30vh;
+  right: 0;
+  z-index: 1;
+}
+
+.lockchain {
+  width: 60vw;
+  position: fixed;
+  top: -30vh;
+  right: 0;
+  z-index: 1;
+}
