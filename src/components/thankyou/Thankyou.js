@@ -42,11 +42,10 @@ const Thankyou = () => {
         }),
       })
         .then((res) => res.json())
-        .then((data) => {
+        .then(() => {
           setMessage(
             "Thanks for subscribing...We're glad you want to keep on top of your online safety!"
           );
-          console.log(data);
         })
         .catch(console.error);
     } else {
@@ -75,11 +74,11 @@ const Thankyou = () => {
         body: JSON.stringify({ scores: scores }),
       })
         // debug logs
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-        })
-        .catch(console.error);
+        // .then((res) => res.json())
+        // .then((data) => {
+        //   console.log(data);
+        // })
+        // .catch(console.error);
     }
     // eslint-disable-next-line
   }, []);
