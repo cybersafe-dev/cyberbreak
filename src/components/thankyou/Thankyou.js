@@ -95,7 +95,6 @@ const Thankyou = () => {
     <main className="score-container">
 
       <section className="body">
-
               <section className="score-content">
                   <h1 className="score-title">Score Card</h1>
                   <p className="blurb">{scoreBlurb}</p>
@@ -107,35 +106,37 @@ const Thankyou = () => {
                     If you would like to subscribe to our email list please enter your email
                     address and click 'Subscribe' below.
                   </p>
+
               </section>
 
               <section className="trophy-container">
+              <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
                   <img src={Trophy} alt=""/>
-                  <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
+
+
               </section>
+</section>
 
-      </section>
+<form>
+  <label htmlFor="email">
+    Please enter your email address
+      </label>
+    <input
+      type="email"
+      id="email"
+      placeholder="enter email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      className="email"
+    />
+    {message && <p>{message}</p>}
+    {error && <p>{error}</p>}
+    </form>
 
 
-      <form className="email-form">
-        <label htmlFor="email">
-          Please enter your email address
-            </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="enter email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="email-input"
-          />
-
-        <button type="submit" onClick={handleEmailSubmit} className="subscribe">
-          Subscribe
-        </button>
-        {message && <p>{message}</p>}
-        {error && <p>{error}</p>}
-      </form>
+<button type="submit" onClick={handleEmailSubmit} className="subscribe">
+  Subscribe
+</button>
       <a href="https://cybersafeireland.org" onClick={() => click.play()}>Donate to CyberSafeIreland</a>
       <a
         href="https://cybersafeireland.org/privacy-policy-and-data-protection"
@@ -145,6 +146,7 @@ const Thankyou = () => {
       >
         privacy policy
       </a>
+
       <audio ref={ref} src={blueSka} autoPlay />
     </main>
 

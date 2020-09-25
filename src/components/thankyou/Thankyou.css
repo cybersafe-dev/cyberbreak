@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   margin: 0;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -32,8 +32,10 @@
 
 /* ----ICON---- */
 .trophy-container {
-  position: relative;
-  align-self: baseline;
+  position: fixed;
+  right: 10rem;
+  top: 10rem;
+  z-index: 0;
 }
 .score {
   position: absolute;
@@ -45,7 +47,6 @@
   padding-bottom: 10rem;
 }
 
-
 .subscribe {
   background-color: #74D47E;
   border: none;
@@ -56,9 +57,12 @@
   color: white;
   box-shadow: -4px -4px 12px 0px #A0E8A8, 6px 6px 12px 0px #4BB456;
   align-self: flex-end;
-
 }
 
+.email {
+  margin-top: 0.5rem;
+  margin-left: 5rem;
+}
 /* .email-form {
   width: 100%;
   height: 40vh;
@@ -66,7 +70,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  /* background-color: white; 
+  /* background-color: white;
   display: visible;
 }
 label {
