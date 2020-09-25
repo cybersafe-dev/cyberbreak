@@ -1,10 +1,18 @@
 import React from "react";
 import { surveyContent } from "../../utils/surveyContent";
-//import Thankyou from "../thankyou/Thankyou";
+import { click } from "../../utils/click";
+import { quizMusic } from "../../utils/music";
 
 const Survey = (props) => {
   const [currentQuestion, setCurrentQuestion] = React.useState(1);
   const [scores, setScores] = React.useState([]);
+  const [currentMusic, setCurrentMusic] = React.useState(null);
+  const ref = React.createRef();
+
+  React.useEffect(() => {
+    setCurrentMusic(() => quizMusic(currentQuestion))
+    // eslint-disable-next-line
+  }, [currentQuestion]);
 
   React.useEffect(() => {
     sessionStorage.setItem("scores", JSON.stringify(scores));
@@ -18,6 +26,7 @@ const Survey = (props) => {
   }, [currentQuestion]);
 
   const goToNextQuestion = (e) => {
+    click.play();
     const { value } = e.target;
     setScores([...scores, parseInt(value)]);
     setCurrentQuestion(() => currentQuestion + 1);
@@ -70,6 +79,7 @@ const Survey = (props) => {
         </button>
       ) : null}
       <p>{currentQuestion}/10</p>
+      <audio ref={ref} src={currentMusic} autoPlay />
     </main>
   );
 };
