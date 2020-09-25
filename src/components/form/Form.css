@@ -82,13 +82,13 @@ input::placeholder {
     justify-content: flex-end;
   }
 
-  input {
+  .unlock-input {
     width: 90%;
     align-self: center;
     margin: 1rem;
   }
 
-  form {
+  .unlock-form {
     width: 100%;
     height: auto;
   }
