@@ -1,0 +1,54 @@
+.error-container {
+  background-color: #00057e;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.error-heading {
+  font-size: 4rem;
+}
+
+.lamp {
+  position: fixed;
+  top: 0;
+  right: 20vw;
+}
+
+.back-start {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.back-start:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+.lamp {
+    height: 20vh;
+    width: auto;
+}
+
+.error-heading {
+    font-size: 2rem;
+  }
+  
+  
+  .back-start {
+    font-family: "Varela Round", sans-serif;
+    color: white;
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

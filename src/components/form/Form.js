@@ -1,4 +1,6 @@
 import React from "react";
+import "./Form.css";
+import Lockchain from "../../assets/images/lockchain.svg"
 
 
 const Form = (props) => {
@@ -7,19 +9,19 @@ const Form = (props) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     sessionStorage.setItem("name", name);
-    props.history.push("/interstitial")
+    props.history.push("/interstitial");
   };
 
   return (
-    <main>
-      <h1>Unlock the quiz!</h1>
-      <p>
-        Enter a team name to unlock a fun family quiz to see where you’re at
-        right now when it comes to being smart and safe online. Good luck!
-      </p>
-      <form>
-        <label htmlFor="name">
-          Please enter your name
+    <main className="page-container">
+      <h1 className="hidden">Unlock the quiz!</h1>
+      <section className="name-entry">
+        <p className="explainer">
+          Enter a team name to unlock a fun family quiz to see where you’re at
+          right now when it comes to being smart and safe online. Good luck!
+        </p>
+        <form>
+          <label htmlFor="name">Please enter your name</label>
           <input
             type="text"
             id="name"
@@ -27,11 +29,17 @@ const Form = (props) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-        </label>
-        <button type="submit" onClick={handleFormSubmit}>
-          Unlock!
-        </button>
-      </form>
+
+          <button
+            type="submit"
+            onClick={handleFormSubmit}
+            className="unlock-btn"
+          >
+            Unlock!
+          </button>
+        </form>
+      </section>
+      <img src={Lockchain} className="lockchain" alt="Padlock" />
     </main>
   );
 };

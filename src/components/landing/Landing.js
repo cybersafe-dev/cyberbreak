@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LandingHeader from "./LandingHeader"
-import Ptsb from "../../images/blk-ptsb.svg"
+import Ptsb from "../../assets/images/blk-ptsb.svg"
 
 import "./Landing.css"
 

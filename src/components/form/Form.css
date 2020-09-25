@@ -1,0 +1,113 @@
+.page-container {
+  background-color: #ff9a6f;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.name-entry {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.explainer {
+  width: 50vw;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+form {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+input {
+  border: none;
+  background-color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  width: 40vw;
+}
+
+input::placeholder {
+  font-family: "Varela Round", sans-serif;
+}
+
+.unlock-btn {
+  background-color: #ff9a6f;
+  filter: drop-shadow(6px 6px 12px #ff7c44) drop-shadow(-4px -4px 12px #ffbb9e);
+  color: white;
+  border-radius: 20px;
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+  border: none;
+  align-self: flex-end;
+  font-family: "Knewave", cursive;
+  font-size: 1.5rem;
+}
+
+.lockchain {
+  position: fixed;
+  top: -400px;
+  right: -200px;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 700px) {
+  .page-container {
+    padding: 3rem 1rem 3rem 1rem;
+    justify-content: flex-end;
+  }
+
+  input {
+    width: 90%;
+    align-self: center;
+    margin: 1rem;
+  }
+
+  form {
+    width: 100%;
+    height: auto;
+  }
+
+  .explainer {
+    width: 90%;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .lockchain {
+    width: 300px;
+    top: -100px;
+    right: -50px;
+    z-index: 0;
+  }
+
+  .unlock-btn {
+    align-self: center;
+    margin: 1rem;
+  }
+}
