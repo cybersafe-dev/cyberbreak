@@ -1,13 +1,16 @@
 import React from "react";
 import "./Form.css";
-import Lockchain from "../../assets/images/lockchain.svg"
-
+import Lockchain from "../../assets/images/lockchain.svg";
+import HappyHappyGame from "../../assets/sounds/Happy Happy Game Show.mp3";
+import { click } from "../../utils/click";
 
 const Form = (props) => {
   const [name, setName] = React.useState("");
+  const ref = React.createRef();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    click.play();
     sessionStorage.setItem("name", name);
     props.history.push("/interstitial");
   };
@@ -40,6 +43,7 @@ const Form = (props) => {
         </form>
       </section>
       <img src={Lockchain} className="lockchain" alt="Padlock" />
+      <audio ref={ref} src={HappyHappyGame} autoPlay />
     </main>
   );
 };

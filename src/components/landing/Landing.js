@@ -2,16 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LandingHeader from "./LandingHeader";
 import Ptsb from "../../assets/images/blk-ptsb.svg";
-import UIfx from "uifx";
 import HappyHappyGame from "../../assets/sounds/Happy Happy Game Show.mp3";
-import clickMp3 from "../../assets/sounds/finger-snap.mp3";
-
+import { click } from "../../utils/click";
 import "./Landing.css";
-const click = new UIfx(clickMp3)
-const landing = new UIfx(HappyHappyGame);
-landing.play(0.5); 
 
 const Landing = () => {
+  const ref = React.createRef();
   return (
     <main className="landing-container">
       <LandingHeader />
@@ -25,6 +21,7 @@ const Landing = () => {
       <Link to="/form" className="btn" onClick={() => click.play()}>
         Lets Go!
       </Link>
+      <audio ref={ref} src={HappyHappyGame} autoPlay />
     </main>
   );
 };

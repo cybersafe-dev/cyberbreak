@@ -1,11 +1,15 @@
 import React from "react";
 import { scoreBlurbs } from "../../utils/scoreBlurbs";
+import blueSka from "../../assets/sounds/Blue Ska.mp3";
+import { click } from "../../utils/click";
 
 const Thankyou = () => {
   const scores = JSON.parse(sessionStorage.getItem("scores"));
   const [email, setEmail] = React.useState("");
   const [error, setError] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const ref = React.createRef();
+
 
   let finalScore = scores.reduce((acc, num) => {
     return acc + num;
@@ -113,14 +117,16 @@ const Thankyou = () => {
         {message && <p>{message}</p>}
         {error && <p>{error}</p>}
       </form>
-      <a href="https://cybersafeireland.org">Donate to CyberSafeIreland</a>
+      <a href="https://cybersafeireland.org" onClick={() => click.play()}>Donate to CyberSafeIreland</a>
       <a
         href="https://cybersafeireland.org/privacy-policy-and-data-protection"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => click.play()}
       >
         privacy policy
       </a>
+      <audio ref={ref} src={blueSka} autoPlay />
     </main>
   );
 };
