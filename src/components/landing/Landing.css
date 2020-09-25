@@ -2,7 +2,6 @@
   background-color: #6C8CFE;
   width: 100vw;
   height: 100vh;
-  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -12,12 +11,14 @@
 }
 .landing-title {
   margin: 0 4rem;
+  padding: 0 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 .landing-text {
   margin: 0 4rem;
+  padding: 0 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -33,6 +34,7 @@
   color: white;
   box-shadow: -4px -4px 12px 0px #9BB1FF, 6px 6px 12px 0px #466FFF;
   align-self: flex-end;
+  margin: 0 3rem 3rem 0;
 }
 .ptsb-logo {
   bottom: 1rem;
@@ -45,6 +47,7 @@
   flex-direction: row;
   overflow: hidden;
   width:100%;
+
 }
 .sun {
   z-index: 1;
@@ -53,7 +56,8 @@
   position: fixed;
 }
 .clouds {
-  z-index: 2;
+  padding: 3rem;
+  z-index: 3;
   animation: 35s infinite alternate slidein;
 }
 @keyframes slidein {
@@ -66,3 +70,29 @@
 }
 
 /* --- MOBILE RESPONSIVE --- */
+@media only screen and (max-width: 700px) {
+
+  .landing-title {
+    margin: 1rem;
+    font-size: 3.5rem;
+    padding: 0;
+    align-self: center;
+  }
+  .landing-text {
+    width: 90%;
+    margin: 1rem;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 0;
+    line-height: 2rem;
+  }
+  .btn {
+    align-self: center;
+    margin: 0 2rem 5rem 2rem;
+    padding: 1.5rem 2.5rem;
+  }
+  .clouds, .sun  {
+    height: 20vh;
+    padding: 0;
+  }
+}
