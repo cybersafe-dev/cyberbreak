@@ -23,7 +23,7 @@ const Form = (props) => {
           Enter a team name to unlock a fun family quiz to see where you’re at
           right now when it comes to being smart and safe online. Good luck!
         </p>
-        <form>
+        <form >
           <label htmlFor="name">Please enter your name</label>
           <input
             type="text"
