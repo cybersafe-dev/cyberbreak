@@ -6,7 +6,7 @@ import HappyHappyGame from "../../assets/sounds/Happy Happy Game Show.mp3";
 import { click } from "../../utils/click";
 import "./Landing.css";
 
-const Landing = () => {
+const Landing = () => {  
   const ref = React.createRef();
   return (
     <main className="landing-container">
@@ -21,7 +21,7 @@ const Landing = () => {
       <Link to="/form" className="btn" onClick={() => click.play()}>
         Lets Go!
       </Link>
-      <audio ref={ref} src={HappyHappyGame} autoPlay />
+      {HappyHappyGame && <audio ref={ref} src={HappyHappyGame} autoPlay loop={true} />}
     </main>
   );
 };

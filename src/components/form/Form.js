@@ -43,7 +43,7 @@ const Form = (props) => {
         </form>
       </section>
       <img src={Lockchain} className="lockchain" alt="Padlock" />
-      <audio ref={ref} src={HappyHappyGame} autoPlay />
+      <audio ref={ref} src={HappyHappyGame} autoPlay loop={true} />
     </main>
   );
 };

@@ -1,0 +1,76 @@
+.question-container {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 5rem; */
+}
+
+.cyclist-svg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.statement {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 2rem;
+  width: 90%;
+  text-align: center;
+}
+
+.responses {
+  width: 90%;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.response {
+  font-family: "Varela Round", sans-serif;
+  color: #181818;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.fraction {
+  align-self: flex-end;
+  font-family: "Knewave", cursive;
+  color: white;
+  font-size: 5rem;
+  font-weight: lighter;
+  margin: 0 5% 0 0;
+  padding: 0;
+  z-index: 5;
+}
+
+@media only screen and (max-width: 700px) {
+  .question-container {
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .statement {
+    font-size: 1.5rem;
+  }
+
+  .response {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .fraction {
+    font-size: 3rem;
+  }
+}
