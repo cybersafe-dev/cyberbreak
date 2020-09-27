@@ -3,6 +3,7 @@ import { scoreBlurbs } from "../../utils/scoreBlurbs";
 import blueSka from "../../assets/sounds/Blue Ska.mp3";
 import { click } from "../../utils/click";
 import Trophy from "../../assets/images/trophy.svg"
+import Confetti from "../../assets/images/confetti.svg"
 import "./Thankyou.css"
 
 
@@ -108,8 +109,10 @@ const Thankyou = () => {
               </section>
                 <section className="trophy-container">
                   <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
+
                   <img src={Trophy} alt=""/>
                 </section>
+                <img src={Confetti} alt="" className="confetti"/>
               </section>
             <form>
               <label htmlFor="email">
