@@ -55,6 +55,19 @@
 
 /* -----LINKS----- */
 
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
 .subscribe {
   background-color: #74D47E;
   border: none;
@@ -84,14 +97,18 @@
   border-radius: 50%;
   box-shadow: -4px -4px 12px 0px #A0E8A8, 6px 6px 12px 0px #4BB456;
   cursor: pointer;
-  width: 6rem;
-  height: 6rem;
+  /* width: 6rem; */
+  /* height: 6rem; */
 }
 
 .note {
-  width: 100%;
-  height: auto;
+  width: 1.5rem;
+  height: 1.5rem;
 }
+
+.privacy:hover, .donate:hover {
+  text-decoration: underline;
+} 
 
 @media only screen and (max-width: 700px) {
   .score-container {

@@ -37,8 +37,8 @@
   filter: drop-shadow(6px 6px 12px #ff7c44) drop-shadow(-4px -4px 12px #ffbb9e);
   color: white;
   border-radius: 20px;
-  width: 200px;
-  height: 100px;
+  padding: 1.5rem 3rem;
+
   cursor: pointer;
   border: none;
   align-self: flex-end;
@@ -73,8 +73,7 @@
   }
 
   .explainer {
-    width: 90%;
-    margin: 1rem;
+    width: 100%;
     font-size: 1.5rem;
   }
 
@@ -87,6 +86,6 @@
 
   .unlock-btn {
     align-self: center;
-    margin: 1rem;
+    margin: 1.5rem 1rem 1.5rem 1rem;
   }
 }

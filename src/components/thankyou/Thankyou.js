@@ -128,28 +128,32 @@ const Thankyou = () => {
           Subscribe
         </button>
       </form>
-      <button
-        className="music-btn"
-        onClick={() => toggleMusicModalVisible(!musicModalVisible)}
-      >
-        <img src={Note} alt="See music acknowledgements" className="note" />
-      </button>
-      <a
-        className="donate"
-        href="https://cybersafeireland.org"
-        onClick={() => click.play()}
-      >
-        Donate to CyberSafeIreland
-      </a>
-      <a
-        className="privacy"
-        href="https://cybersafeireland.org/privacy-policy-and-data-protection"
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => click.play()}
-      >
-        Privacy Policy
-      </a>
+      <section className="information">
+        <button
+          className="music-btn"
+          onClick={() => toggleMusicModalVisible(!musicModalVisible)}
+        >
+          <img src={Note} alt="See music acknowledgements" className="note" />
+        </button>
+        <div className="links">
+          <a
+            className="donate"
+            href="https://cybersafeireland.org"
+            onClick={() => click.play()}
+          >
+            Donate to CyberSafeIreland
+          </a>
+          <a
+            className="privacy"
+            href="https://cybersafeireland.org/privacy-policy-and-data-protection"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => click.play()}
+          >
+            Privacy Policy
+          </a>
+        </div>
+      </section>
       {musicModalVisible && (
         <MusicModal
           musicModalVisible={musicModalVisible}

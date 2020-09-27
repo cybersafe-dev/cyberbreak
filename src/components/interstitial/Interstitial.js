@@ -18,7 +18,7 @@ const Interstitial = (props) => {
     <main className="interstitial-container">
       <section className="interstitial-text">
         <p>The quiz will begin any moment...</p>
-        <p>Choose the answers that best fit your family!</p>
+        <p>Click the answer that best fits your family!</p>
       </section>
       <div className="hand-and-boxes">
         <img src={hand} alt="hand" className="hand" />
