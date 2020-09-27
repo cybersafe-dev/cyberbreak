@@ -23,9 +23,11 @@ a {
   font-family: "Varela Round", sans-serif;
   color: white;
   font-size: 1.1rem;
+  text-decoration: none;
+
 }
 
-.btn {
+button {
   font-family: "Knewave", cursive;
 }
 
@@ -48,4 +50,18 @@ input {
 
 input::placeholder {
   font-family: "Varela Round", sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
+  input {
+    width: 90%;
+    align-self: center;
+    margin: 1rem;
+  }
+
+  form {
+    width: 100%;
+    height: auto;
+  }
+
 }

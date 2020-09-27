@@ -56,7 +56,7 @@
   position: fixed;
 }
 .clouds {
-  z-index: 3;
+  z-index: 1;
   animation: 35s infinite alternate slidein;
 }
 @keyframes slidein {

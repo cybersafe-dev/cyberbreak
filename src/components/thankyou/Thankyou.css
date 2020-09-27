@@ -29,7 +29,6 @@
   width: 40rem;
   margin: 0 5rem 1rem 5rem;
 }
-
 .email {
   margin-left: 5rem;
 }
@@ -40,8 +39,8 @@
   right: 10rem;
   top: 7rem;
   z-index: 0;
-
 }
+
 .score {
   position: absolute;
   top: 50%;
@@ -67,6 +66,32 @@
   align-self: flex-end;
 }
 
-.privacy {
-
+@media only screen and (max-width: 700px) {
+  .score-container {
+    padding: 5rem 1rem 2rem 1rem;
+  }
+  .score-title {
+    font-size: 4rem;
+    margin: 0;
+  }
+  .blurb {
+    width: 100%;
+    margin: 0;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 0;
+    line-height: 1.5rem;
+  }
+  .email {
+    margin-left: 1rem;
+  }
+  .subscribe {
+    align-self: center;
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.8rem;
+  }
+  .trophy-container {
+    display: none;
+  }
 }
