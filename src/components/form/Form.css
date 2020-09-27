@@ -31,27 +31,6 @@
   z-index: 1;
 }
 
-form {
-  width: 100%;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-input {
-  border: none;
-  background-color: white;
-  padding: 1rem;
-  font-size: 2rem;
-  width: 40vw;
-}
-
-input::placeholder {
-  font-family: "Varela Round", sans-serif;
-}
-
 .unlock-btn {
   background-color: #ff9a6f;
   filter: drop-shadow(6px 6px 12px #ff7c44) drop-shadow(-4px -4px 12px #ffbb9e);
@@ -82,13 +61,13 @@ input::placeholder {
     justify-content: flex-end;
   }
 
-  .unlock-input {
+  input {
     width: 90%;
     align-self: center;
     margin: 1rem;
   }
 
-  .unlock-form {
+  form {
     width: 100%;
     height: auto;
   }
