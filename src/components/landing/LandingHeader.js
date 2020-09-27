@@ -7,8 +7,9 @@ import "./Landing.css"
 
 const LandingHeader = () => (
   <main className="landing-header">
-    <img src={Clouds} alt="" className="clouds"/>
+
     <img src={Sun} alt="" className="sun"/>
+    <img src={Clouds} alt="" className="clouds"/>
   </main>
 );
 

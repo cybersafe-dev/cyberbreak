@@ -2,6 +2,8 @@ import React from "react";
 import { scoreBlurbs } from "../../utils/scoreBlurbs";
 import blueSka from "../../assets/sounds/Blue Ska.mp3";
 import { click } from "../../utils/click";
+import Trophy from "../../assets/images/confetti-cup.svg";
+import "./Thankyou.css";
 
 const Thankyou = () => {
   const scores = JSON.parse(sessionStorage.getItem("scores"));
@@ -9,7 +11,6 @@ const Thankyou = () => {
   const [error, setError] = React.useState("");
   const [message, setMessage] = React.useState("");
   const ref = React.createRef();
-
 
   let finalScore = scores.reduce((acc, num) => {
     return acc + num;
@@ -88,45 +89,59 @@ const Thankyou = () => {
   }, []);
 
   return (
-    <main>
-      <h1>Score Card</h1>
-      <h2>{finalScorePercent(finalScore)}%</h2>
-      <p>{scoreBlurb}</p>
-      <p>
-        Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber
-        Break!
-      </p>
-      <p>
-        If you would like to subscribe to our email list please enter your email
-        address and click 'Subscribe' below.
-      </p>
+    <main className="score-container">
+      <section className="body">
+        <section className="score-content">
+          <h1 className="score-title">Score Card</h1>
+          <p className="blurb">{scoreBlurb}</p>
+          <p className="blurb">
+            Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber
+            Break!
+          </p>
+          <p className="blurb">
+            If you would like to subscribe to our email list please enter your
+            email address and click 'Subscribe' below.
+          </p>
+        </section>
+        <section className="trophy-container">
+          <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
+
+          <img src={Trophy} alt="" />
+        </section>
+      </section>
       <form>
-        <label htmlFor="email">
-          Please enter your email address
-          <input
-            type="email"
-            id="email"
-            placeholder="enter email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </label>
-        <button type="submit" onClick={handleEmailSubmit}>
+        <label htmlFor="email">Please enter your email address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="enter email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="email"
+        />
+        {message && <p className="msg">{message}</p>}
+        {error && <p className="msg">{error}</p>}
+        <button type="submit" onClick={handleEmailSubmit} className="subscribe">
           Subscribe
         </button>
-        {message && <p>{message}</p>}
-        {error && <p>{error}</p>}
       </form>
-      <a href="https://cybersafeireland.org" onClick={() => click.play()}>Donate to CyberSafeIreland</a>
       <a
+        className="donate"
+        href="https://cybersafeireland.org"
+        onClick={() => click.play()}
+      >
+        Donate to CyberSafeIreland
+      </a>
+      <a
+        className="privacy"
         href="https://cybersafeireland.org/privacy-policy-and-data-protection"
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => click.play()}
       >
-        privacy policy
+        Privacy Policy
       </a>
-      <audio ref={ref} src={blueSka} autoPlay loop="true" />
+      <audio ref={ref} src={blueSka} autoPlay />
     </main>
   );
 };
