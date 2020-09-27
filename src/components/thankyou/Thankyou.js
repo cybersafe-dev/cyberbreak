@@ -96,11 +96,11 @@ const Thankyou = () => {
       <section className="body">
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
-          <p className="blurb">{scoreBlurb}</p>
           <p className="blurb">
             Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber
             Break!
           </p>
+          <p className="blurb">{scoreBlurb}</p>
           <p className="blurb">
             If you would like to subscribe to our email list please enter your
             email address and click 'Subscribe' below.
@@ -156,7 +156,7 @@ const Thankyou = () => {
           toggleMusicModalVisible={toggleMusicModalVisible}
         />
       )}
-      <audio ref={ref} src={blueSka} autoPlay />
+      <audio ref={ref} src={blueSka} autoPlay loop={true} />
     </main>
   );
 };

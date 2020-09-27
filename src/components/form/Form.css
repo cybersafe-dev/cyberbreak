@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   margin: 0;
-  padding: 3rem;
+  padding: 3rem 3rem 3rem 7rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -27,8 +27,9 @@
   width: 50vw;
   font-family: "Varela Round", sans-serif;
   color: white;
-  font-size: 2rem;
+  font-size: 1.3rem;
   z-index: 1;
+  line-height: 2rem;
 }
 
 .unlock-btn {
@@ -43,16 +44,15 @@
   align-self: flex-end;
   font-family: "Knewave", cursive;
   font-size: 1.5rem;
+  z-index:5;
 }
 
 .lockchain {
+  height: 600px;
   position: fixed;
-  top: -400px;
-  right: -200px;
+  top: -200px;
+  right: 0px;
   z-index: 0;
-}
-
-@media only screen and (max-width: 1024px) {
 }
 
 @media only screen and (max-width: 700px) {
@@ -79,9 +79,9 @@
   }
 
   .lockchain {
-    width: 300px;
+    height: 300px;
     top: -100px;
-    right: -50px;
+    right: 0px;
     z-index: 0;
   }
 

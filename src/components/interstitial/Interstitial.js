@@ -10,7 +10,7 @@ const Interstitial = (props) => {
     setTimeout(() => {
       click.play();
       props.history.push("/survey");
-    }, 3000);
+    }, 5000);
   // eslint-disable-next-line
   }, []);
   const ref = React.createRef();

@@ -13,12 +13,14 @@
 
 .error-heading {
   font-size: 4rem;
+  z-index: 1;
 }
 
 .lamp {
   position: fixed;
   top: 0;
   right: 20vw;
+  z-index: 0;
 }
 
 .back-start {

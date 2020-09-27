@@ -1,15 +1,13 @@
 import React from "react";
-import Clouds from "../../assets/images/cloud-logo.svg"
-import Sun from "../../assets/images/sun.svg"
+import Clouds from "../../assets/images/cloud-logo.svg";
+import Sun from "../../assets/images/sun.svg";
 
-import "./Landing.css"
-
+import "./Landing.css";
 
 const LandingHeader = () => (
   <main className="landing-header">
-
-    <img src={Sun} alt="" className="sun"/>
-    <img src={Clouds} alt="" className="clouds"/>
+    <img src={Clouds} alt="clouds" className="clouds" />
+    <img src={Sun} alt="sun" className="sun" />
   </main>
 );
 

@@ -87,7 +87,7 @@ const Survey = (props) => {
       </section>
       <p className="fraction">{currentQuestion}/10</p>
       <img src={Cyclist} alt="cycling through trees" className="cyclist-svg" />
-      <audio ref={ref} src={currentMusic} autoPlay loop="true" />
+      <audio ref={ref} src={currentMusic} autoPlay loop={true} />
     </main>
   );
 };
