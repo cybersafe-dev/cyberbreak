@@ -125,8 +125,8 @@ const Thankyou = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   className="email"
               />
-                {message && <p>{message}</p>}
-                {error && <p>{error}</p>}
+                {message && <p className="msg">{message}</p>}
+                {error && <p className="msg">{error}</p>}
                 <button type="submit" onClick={handleEmailSubmit} className="subscribe">
                   Subscribe
                 </button>
