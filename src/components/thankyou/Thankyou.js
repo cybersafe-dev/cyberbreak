@@ -3,6 +3,8 @@ import { scoreBlurbs } from "../../utils/scoreBlurbs";
 import blueSka from "../../assets/sounds/Blue Ska.mp3";
 import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg";
+import MusicModal from "../musicModal/MusicModal";
+import Note from "../../assets/images/note.svg";
 import "./Thankyou.css";
 
 const Thankyou = () => {
@@ -10,6 +12,7 @@ const Thankyou = () => {
   const [email, setEmail] = React.useState("");
   const [error, setError] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [musicModalVisible, toggleMusicModalVisible] = React.useState(false);
   const ref = React.createRef();
 
   let finalScore = scores.reduce((acc, num) => {
@@ -125,6 +128,12 @@ const Thankyou = () => {
           Subscribe
         </button>
       </form>
+      <button
+        className="music-btn"
+        onClick={() => toggleMusicModalVisible(!musicModalVisible)}
+      >
+        <img src={Note} alt="See music acknowledgements" className="note" />
+      </button>
       <a
         className="donate"
         href="https://cybersafeireland.org"
@@ -141,6 +150,12 @@ const Thankyou = () => {
       >
         Privacy Policy
       </a>
+      {musicModalVisible && (
+        <MusicModal
+          musicModalVisible={musicModalVisible}
+          toggleMusicModalVisible={toggleMusicModalVisible}
+        />
+      )}
       <audio ref={ref} src={blueSka} autoPlay />
     </main>
   );

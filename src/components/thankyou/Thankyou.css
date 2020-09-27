@@ -21,6 +21,7 @@
 .score-content {
   display: inherit;
   flex-direction: column;
+  width: 90%;
 }
 .score-title {
   margin: 0 0 2rem 5rem;
@@ -76,9 +77,26 @@
   color: #00FFE0;
 }
 
+.music-btn {
+  background-color: #74D47E;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 50%;
+  box-shadow: -4px -4px 12px 0px #A0E8A8, 6px 6px 12px 0px #4BB456;
+  cursor: pointer;
+  width: 6rem;
+  height: 6rem;
+}
+
+.note {
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (max-width: 700px) {
   .score-container {
     padding: 5rem 1rem 2rem 1rem;
+    height: auto;
   }
   .score-title {
     font-size: 4rem;

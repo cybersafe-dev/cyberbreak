@@ -1,0 +1,43 @@
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color:#00AFEC;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.modal-header {
+    margin: 0;
+}
+
+.modal-text {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
+.x-icon {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-container {
+    padding: 1rem;
+  }
+
+  .modal-header {
+    text-align: center;
+}
+}
