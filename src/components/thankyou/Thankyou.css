@@ -38,22 +38,20 @@
 .trophy-container {
   position: fixed;
   right: 10rem;
-  top: 10rem;
+  top: 7rem;
   z-index: 0;
+
 }
 .score {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size:4rem;
+  font-size:3rem;
   font-family: 'Carter One', cursive;
-  padding-bottom: 10rem;
+  z-index: 2;
 }
 
-.confetti {
-  padding-bottom: 18rem;
-}
 
 /* -----LINKS----- */
 
