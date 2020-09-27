@@ -1,0 +1,100 @@
+<svg width="1044" height="131" viewBox="0 0 1044 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        #cyclist {
+            animation-name: unlock;
+            animation-duration: 60000ms;
+            animation-iteration-count: infinite;
+            transition-timing-function: linear;
+        }
+        @keyframes unlock {
+            0%{transform: translate(-120px,0)}
+            100%{transform: translate(1200px,0px)}
+        }
+    </style>
+    <rect x="125" y="66" width="17" height="65" fill="#7A6857" />
+    <rect x="284" y="85" width="13" height="46" fill="#7A6857" />
+    <rect x="391" y="59" width="39" height="72" fill="#7A6857" />
+    <rect x="492" y="98" width="14" height="33" fill="#7A6857" />
+    <rect x="548" y="78" width="12" height="53" fill="#7A6857" />
+    <rect x="571" y="56" width="8" height="75" fill="#7A6857" />
+    <path d="M559 103L572 93.5L575 131H559V103Z" fill="#7A6857" />
+    <rect x="677" y="89" width="30" height="42" fill="#7A6857" />
+    <rect x="834" y="67" width="13" height="64" fill="#7A6857" />
+    <rect x="892" y="81" width="16" height="50" fill="#7A6857" />
+    <circle cx="142.149" cy="103.036" r="13" transform="rotate(-111.737 142.149 103.036)" fill="#73C631" />
+    <circle cx="909.149" cy="93.0355" r="13" transform="rotate(-111.737 909.149 93.0355)" fill="#73C631" />
+    <circle cx="136.788" cy="81.4889" r="16" transform="rotate(-111.737 136.788 81.4889)" fill="#429700" />
+    <circle cx="903.788" cy="71.4889" r="16" transform="rotate(-111.737 903.788 71.4889)" fill="#429700" />
+    <circle cx="115.788" cy="96.3209" r="16" transform="rotate(-111.737 115.788 96.3209)" fill="#579E1F" />
+    <circle cx="882.788" cy="86.3209" r="16" transform="rotate(-111.737 882.788 86.3209)" fill="#579E1F" />
+    <circle cx="120.548" cy="74.507" r="12.5" transform="rotate(-111.737 120.548 74.507)" fill="#579E1F" />
+    <circle cx="887.547" cy="64.507" r="12.5" transform="rotate(-111.737 887.547 64.507)" fill="#579E1F" />
+    <circle cx="142.283" cy="66.9179" r="13.5" transform="rotate(-111.737 142.283 66.9179)" fill="#579E1F" />
+    <circle cx="909.282" cy="56.9179" r="13.5" transform="rotate(-111.737 909.282 56.9179)" fill="#579E1F" />
+    <circle cx="154.789" cy="91.5366" r="16" transform="rotate(-111.737 154.789 91.5366)" fill="#579E1F" />
+    <circle cx="921.789" cy="81.5366" r="16" transform="rotate(-111.737 921.789 81.5366)" fill="#579E1F" />
+    <ellipse cx="122.421" cy="60.3035" rx="15" ry="14.5" transform="rotate(-111.737 122.421 60.3035)" fill="#73C631" />
+    <ellipse cx="889.42" cy="50.3035" rx="15" ry="14.5" transform="rotate(-111.737 889.42 50.3035)" fill="#73C631" />
+    <circle cx="272" cy="72" r="20" fill="#579E1F" />
+    <ellipse rx="21.5" ry="20" transform="matrix(-1 0 0 1 710.5 71)" fill="#579E1F" />
+    <ellipse rx="21.5" ry="20" transform="matrix(0.406213 -0.913779 -0.913779 -0.406213 820.129 67.4356)" fill="#579E1F" />
+    <ellipse rx="21.5" ry="20" transform="matrix(0.650885 0.759177 0.759177 -0.650885 834.475 29.5358)" fill="#579E1F" />
+    <ellipse cx="290.5" cy="53" rx="18.5" ry="19" fill="#73C631" />
+    <ellipse rx="19.5" ry="19" transform="matrix(-1 0 0 1 690.5 52)" fill="#73C631" />
+    <ellipse rx="19.5" ry="19" transform="matrix(0.406213 -0.913779 -0.913779 -0.406213 845.616 56.8781)" fill="#73C631" />
+    <ellipse rx="19.5" ry="19" transform="matrix(0.650885 0.759177 0.759177 -0.650885 838.117 60.1708)" fill="#73C631" />
+    <ellipse cx="311" cy="72.5" rx="19" ry="19.5" fill="#579E1F" />
+    <ellipse rx="20.5" ry="19.5" transform="matrix(-1 0 0 1 668.5 71.5)" fill="#579E1F" />
+    <ellipse rx="20.5" ry="19.5" transform="matrix(0.406213 -0.913779 -0.913779 -0.406213 836.734 28.8537)" fill="#579E1F" />
+    <ellipse rx="20.5" ry="19.5" transform="matrix(0.650885 0.759177 0.759177 -0.650885 862.147 60.9704)" fill="#579E1F" />
+    <circle cx="285.5" cy="97.5" r="13.5" fill="#579E1F" />
+    <circle cx="380.5" cy="83.5" r="13.5" fill="#579E1F" />
+    <ellipse rx="14.5" ry="13.5" transform="matrix(-1 0 0 1 699.5 91.5)" fill="#429700" />
+    <ellipse rx="14.5" ry="13.5" transform="matrix(-1 0 0 1 568.5 62.5)" fill="#429700" />
+    <ellipse rx="14.5" ry="13.5" transform="matrix(0.406213 -0.913779 -0.913779 -0.406213 802.921 43.3705)" fill="#579E1F" />
+    <ellipse rx="14.5" ry="13.5" transform="matrix(0.650885 0.759177 0.759177 -0.650885 863.597 24.326)" fill="#73C631" />
+    <ellipse cx="303.5" cy="84" rx="17.5" ry="19" fill="#579E1F" />
+    <ellipse rx="18.5" ry="19" transform="matrix(-1 0 0 1 676.5 83)" fill="#579E1F" />
+    <ellipse rx="18.5" ry="19" transform="matrix(0.406213 -0.913779 -0.913779 -0.406213 822.975 31.4925)" fill="#429700" />
+    <ellipse rx="18.5" ry="19" transform="matrix(0.650885 0.759177 0.759177 -0.650885 865.671 47.4116)" fill="#579E1F" />
+    <circle cx="380.5" cy="52.5" r="20.5" fill="#73C631" />
+    <ellipse cx="425" cy="42" rx="24" ry="26" fill="#429700" />
+    <ellipse cx="398.5" cy="35" rx="17.5" ry="19" fill="#579E1F" />
+    <ellipse cx="403.5" cy="67.5" rx="12.5" ry="13.5" fill="#579E1F" />
+    <ellipse cx="437" cy="78.5" rx="21" ry="21.5" fill="#579E1F" />
+    <ellipse cx="403" cy="75" rx="22" ry="23" fill="#579E1F" />
+    <ellipse cx="530" cy="70" rx="16" ry="17" fill="#579E1F" />
+    <ellipse cx="488" cy="93" rx="16" ry="17" fill="#579E1F" />
+    <ellipse cx="544.5" cy="51.5" rx="14.5" ry="16.5" fill="#579E1F" />
+    <ellipse cx="502.5" cy="74.5" rx="14.5" ry="16.5" fill="#579E1F" />
+    <ellipse cx="529.5" cy="55.5" rx="15.5" ry="14.5" fill="#73C631" />
+    <ellipse cx="561.5" cy="41.5" rx="15.5" ry="14.5" fill="#73C631" />
+    <ellipse cx="487.5" cy="78.5" rx="15.5" ry="14.5" fill="#73C631" />
+    <ellipse cx="612" cy="65.5" rx="19" ry="20.5" fill="#579E1F" />
+    <ellipse cx="593" cy="61" rx="14" ry="16" fill="#579E1F" />
+    <ellipse cx="595.5" cy="49" rx="16.5" ry="17" fill="#73C631" />
+    <ellipse cx="586.5" cy="69.5" rx="15.5" ry="17.5" fill="#579E1F" />
+    <ellipse cx="558.5" cy="76.5" rx="12.5" ry="15.5" fill="#429700" />
+    <ellipse cx="516.5" cy="99.5" rx="12.5" ry="15.5" fill="#429700" />
+    <ellipse cx="577.5" cy="42" rx="18.5" ry="19" fill="#579E1F" />
+    <ellipse cx="545.5" cy="68" rx="18.5" ry="20" fill="#579E1F" />
+    <ellipse cx="503.5" cy="91" rx="18.5" ry="20" fill="#579E1F" />
+    <g id="cyclist">
+        <circle cx="10" cy="121" r="9.5" stroke="black" />
+        <circle cx="37" cy="121" r="9.5" stroke="black" />
+        <path d="M21.5 110L10 121H21.5V110Z" stroke="#F8A300" />
+        <path d="M34 109L22.5 120V109H34Z" stroke="#F8A300" />
+        <path d="M34 107.5L34 114L37.4848 121.879" stroke="#F8A300" />
+        <circle cx="22" cy="121" r="3" fill="#C4C4C4" />
+        <circle cx="35.5" cy="107.5" r="1.5" fill="#C4C4C4" />
+        <circle cx="20" cy="107" r="2" fill="#C4C4C4" />
+        <path d="M27 107.5C27 108.328 23.7289 108.136 22 109C20 110 18 108.328 18 107.5C18 106.672 21.567 106 23.5 106C25.433 106 27 106.672 27 107.5Z" fill="#C4C4C4" />
+        <path d="M20 104.5L26.8926 104L28 113L24.5 114.5L20 104.5Z" fill="#1761D0" />
+        <path d="M20.7639 105.702C19.168 105.498 18.4543 103.588 19.5247 102.387L26.5976 94.4515C26.845 94.1739 27.226 94.0565 27.5867 94.1467L29 94.5L27 106.5L20.7639 105.702Z" fill="#A83030" />
+        <rect x="25.3892" y="112" width="3" height="9" transform="rotate(22.1206 25.3892 112)" fill="#1761D0" />
+        <rect x="25.6411" y="95.2875" width="3.04526" height="13.6494" rx="1" transform="rotate(-30.8562 25.6411 95.2875)" fill="#A83030" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M33 91.5C33 89.567 31.433 88 29.5 88C27.567 88 26 89.567 26 91.5H33Z" fill="#C25DC5" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M26 91.5C26 93.433 27.567 95 29.5 95C31.433 95 33 93.433 33 91.5H26Z" fill="#8E5500" />
+        <path d="M25 121.5L22 120.5L21 122L25.9944 125.746C26.9462 126.46 28.1256 125.212 27.3593 124.302L25 121.5Z" fill="white" />
+    </g>
+</svg>

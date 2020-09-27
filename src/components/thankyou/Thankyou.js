@@ -126,7 +126,7 @@ const Thankyou = () => {
       >
         privacy policy
       </a>
-      <audio ref={ref} src={blueSka} autoPlay />
+      <audio ref={ref} src={blueSka} autoPlay loop="true" />
     </main>
   );
 };

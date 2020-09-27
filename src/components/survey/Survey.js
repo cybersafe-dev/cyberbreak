@@ -2,23 +2,24 @@ import React from "react";
 import { surveyContent } from "../../utils/surveyContent";
 import { click } from "../../utils/click";
 import { quizMusic } from "../../utils/music";
+import { surveyBackgroundColor } from "../../utils/surveyBackground";
+import Cyclist from "../../assets/images/cyclist-svg.svg";
+import "./Survey.css";
 
 const Survey = (props) => {
   const [currentQuestion, setCurrentQuestion] = React.useState(1);
   const [scores, setScores] = React.useState([]);
   const [currentMusic, setCurrentMusic] = React.useState(null);
+  const [currentBg, setCurrentBg] = React.useState(null);
   const ref = React.createRef();
-
-  React.useEffect(() => {
-    setCurrentMusic(() => quizMusic(currentQuestion))
-    // eslint-disable-next-line
-  }, [currentQuestion]);
 
   React.useEffect(() => {
     sessionStorage.setItem("scores", JSON.stringify(scores));
   }, [scores]);
 
   React.useEffect(() => {
+    setCurrentMusic(() => quizMusic(currentQuestion));
+    setCurrentBg(() => surveyBackgroundColor(currentQuestion));
     if (currentQuestion > 10) {
       props.history.push("/thankyou");
     }
@@ -41,45 +42,52 @@ const Survey = (props) => {
   }
 
   return (
-    <main>
-      <h1>Survey</h1>
-      <h2>
+    <main className="question-container" style={{ backgroundColor: currentBg }}>
+      <h1 className="hidden">Quiz</h1>
+      <h2 className="statement">
         {currentQuestion}. {surveyContent[currentQuestion].statement}
       </h2>
-      {surveyContent[currentQuestion].a1 ? (
-        <button
-          onClick={goToNextQuestion}
-          value={surveyContent[currentQuestion].a1.points}
-        >
-          a. {surveyContent[currentQuestion].a1.answer}
-        </button>
-      ) : null}
-      {surveyContent[currentQuestion].a2 ? (
-        <button
-          onClick={goToNextQuestion}
-          value={surveyContent[currentQuestion].a2.points}
-        >
-          b. {surveyContent[currentQuestion].a2.answer}
-        </button>
-      ) : null}
-      {surveyContent[currentQuestion].a3 ? (
-        <button
-          onClick={goToNextQuestion}
-          value={surveyContent[currentQuestion].a3.points}
-        >
-          c. {surveyContent[currentQuestion].a3.answer}
-        </button>
-      ) : null}
-      {surveyContent[currentQuestion].a4 ? (
-        <button
-          onClick={goToNextQuestion}
-          value={surveyContent[currentQuestion].a4.points}
-        >
-          d. {surveyContent[currentQuestion].a4.answer}
-        </button>
-      ) : null}
-      <p>{currentQuestion}/10</p>
-      <audio ref={ref} src={currentMusic} autoPlay />
+      <section className="responses">
+        {surveyContent[currentQuestion].a1 ? (
+          <button
+            className="response"
+            onClick={goToNextQuestion}
+            value={surveyContent[currentQuestion].a1.points}
+          >
+            a. {surveyContent[currentQuestion].a1.answer}
+          </button>
+        ) : null}
+        {surveyContent[currentQuestion].a2 ? (
+          <button
+            className="response"
+            onClick={goToNextQuestion}
+            value={surveyContent[currentQuestion].a2.points}
+          >
+            b. {surveyContent[currentQuestion].a2.answer}
+          </button>
+        ) : null}
+        {surveyContent[currentQuestion].a3 ? (
+          <button
+            className="response"
+            onClick={goToNextQuestion}
+            value={surveyContent[currentQuestion].a3.points}
+          >
+            c. {surveyContent[currentQuestion].a3.answer}
+          </button>
+        ) : null}
+        {surveyContent[currentQuestion].a4 ? (
+          <button
+            className="response"
+            onClick={goToNextQuestion}
+            value={surveyContent[currentQuestion].a4.points}
+          >
+            d. {surveyContent[currentQuestion].a4.answer}
+          </button>
+        ) : null}
+      </section>
+      <p className="fraction">{currentQuestion}/10</p>
+      <img src={Cyclist} alt="cycling through trees" className="cyclist-svg" />
+      <audio ref={ref} src={currentMusic} autoPlay loop="true" />
     </main>
   );
 };

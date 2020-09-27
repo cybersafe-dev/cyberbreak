@@ -15,7 +15,7 @@ const Interstitial = (props) => {
     <main>
       <p>The quiz will begin any moment...</p>
       <p>Choose the answers that best fit your family!</p>
-      <audio ref={ref} src={HappyHappyGame} autoPlay />
+      <audio ref={ref} src={HappyHappyGame} autoPlay loop="true" />
     </main>
   );
 };

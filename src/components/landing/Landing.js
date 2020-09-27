@@ -21,7 +21,7 @@ const Landing = () => {
       <Link to="/form" className="btn" onClick={() => click.play()}>
         Lets Go!
       </Link>
-      <audio ref={ref} src={HappyHappyGame} autoPlay />
+      <audio ref={ref} src={HappyHappyGame} autoPlay loop="true" />
     </main>
   );
 };
