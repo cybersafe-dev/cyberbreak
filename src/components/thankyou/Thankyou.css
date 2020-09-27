@@ -64,6 +64,7 @@
   color: white;
   box-shadow: -4px -4px 12px 0px #A0E8A8, 6px 6px 12px 0px #4BB456;
   align-self: flex-end;
+  font-family: "Knewave", sans-serif;
 }
 
 @media only screen and (max-width: 700px) {

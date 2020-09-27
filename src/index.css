@@ -7,7 +7,7 @@ label {
 }
 
 h1 {
-  font-family: "Knewave", cursive;
+  font-family: "Knewave", sans-serif;
   color: white;
   font-size: 6rem;
   font-weight: lighter;
@@ -27,8 +27,8 @@ a {
 
 }
 
-button {
-  font-family: "Knewave", cursive;
+.btn {
+  font-family: "Knewave", sans-serif;
 }
 
 form {

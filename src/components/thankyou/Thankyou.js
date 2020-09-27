@@ -3,7 +3,6 @@ import { scoreBlurbs } from "../../utils/scoreBlurbs";
 import blueSka from "../../assets/sounds/Blue Ska.mp3";
 import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg"
-import Confetti from "../../assets/images/confetti.svg"
 import "./Thankyou.css"
 
 
@@ -112,7 +111,7 @@ const Thankyou = () => {
 
                   <img src={Trophy} alt=""/>
                 </section>
-            
+
               </section>
             <form>
               <label htmlFor="email">
