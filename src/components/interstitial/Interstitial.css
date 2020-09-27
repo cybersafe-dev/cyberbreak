@@ -1,0 +1,47 @@
+.interstitial-container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 3rem;
+  background-color: #00afec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.interstitial-text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hand-and-boxes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 90%;
+}
+
+.hand {
+  max-width: 40vw;
+  animation: 2s infinite pointy;
+}
+
+.boxes {
+  max-width: 40vw;
+}
+
+@keyframes pointy {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0px, 60px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
