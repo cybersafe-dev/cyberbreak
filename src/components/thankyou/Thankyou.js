@@ -5,6 +5,7 @@ import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg";
 import MusicModal from "../musicModal/MusicModal";
 import Note from "../../assets/images/note.svg";
+import Lock from "../../assets/images/white-lock.svg";
 import "./Thankyou.css";
 
 const Thankyou = () => {
@@ -100,7 +101,7 @@ const Thankyou = () => {
       <form className="email-signup">
         <div>
           <p className="blurb">
-            If you would like to subscribe to our email list please enter your
+            If you would like to subscribe to our newsletter please enter your
             email address and click 'Subscribe' below.
           </p>
           <label htmlFor="email">Please enter your email address</label>
@@ -123,37 +124,46 @@ const Thankyou = () => {
           >
             Subscribe
           </button>
-          <section className="information">
-            <div className="links">
+          <section className="link-btns">
+            <div className="link-btn">
               <a
-                className="donate"
-                href="https://cybersafeireland.org"
-                onClick={() => click.play()}
-              >
-                Donate to CyberSafeIreland
-              </a>
-              <a
-                className="privacy"
                 href="https://cybersafeireland.org/privacy-policy-and-data-protection"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => click.play()}
               >
-                Privacy Policy
+                <button
+                  onClick={() => click.play()}
+                  type="button"
+                  className="music-btn"
+                >
+                  <img src={Lock} alt="See privacy policy" className="note" />
+                </button>
               </a>
+              <p className="btn-link">Privacy Policy</p>
             </div>
-            <button
-            type="button"
-              className="music-btn"
-              onClick={() => toggleMusicModalVisible(!musicModalVisible)}
-            >
-              <img
-                src={Note}
-                alt="See music acknowledgements"
-                className="note"
-              />
-            </button>
+            <div className="link-btn">
+              <button
+                type="button"
+                className="music-btn"
+                onClick={() => toggleMusicModalVisible(!musicModalVisible)}
+              >
+                <img
+                  src={Note}
+                  alt="See music acknowledgements"
+                  className="note"
+                />
+              </button>
+              <p className="btn-link">Music</p>
+            </div>
           </section>
+          <button
+            type="submit"
+            className="subscribe"
+            href="https://cybersafeireland.org"
+            onClick={() => click.play()}
+          >
+            Donate
+          </button>
         </section>
       </form>
       <audio ref={ref} src={blueSka} autoPlay loop={true} />
