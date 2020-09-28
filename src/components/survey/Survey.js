@@ -33,7 +33,10 @@ const Survey = (props) => {
             //console.log(data);
             props.history.push("/thankyou");
           })
-          .catch(console.error);
+          .catch((error) => {
+            console.error(error);
+            props.history.push("/thankyou");
+          });
       };
       postFinalScores(finalScores);
     }
