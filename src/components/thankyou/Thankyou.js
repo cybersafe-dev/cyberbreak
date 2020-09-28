@@ -9,10 +9,10 @@ import "./Thankyou.css";
 
 const Thankyou = () => {
   const scores = JSON.parse(sessionStorage.getItem("scores"));
+  const [musicModalVisible, toggleMusicModalVisible] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [error, setError] = React.useState("");
   const [message, setMessage] = React.useState("");
-  const [musicModalVisible, toggleMusicModalVisible] = React.useState(false);
   const ref = React.createRef();
 
   let finalScore = scores.reduce((acc, num) => {
@@ -77,6 +77,12 @@ const Thankyou = () => {
 
   return (
     <main className="score-container">
+      {musicModalVisible && (
+        <MusicModal
+          musicModalVisible={musicModalVisible}
+          toggleMusicModalVisible={toggleMusicModalVisible}
+        />
+      )}
       <section className="results">
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
@@ -137,6 +143,7 @@ const Thankyou = () => {
               </a>
             </div>
             <button
+            type="button"
               className="music-btn"
               onClick={() => toggleMusicModalVisible(!musicModalVisible)}
             >
@@ -149,13 +156,6 @@ const Thankyou = () => {
           </section>
         </section>
       </form>
-
-      {musicModalVisible && (
-        <MusicModal
-          musicModalVisible={musicModalVisible}
-          toggleMusicModalVisible={toggleMusicModalVisible}
-        />
-      )}
       <audio ref={ref} src={blueSka} autoPlay loop={true} />
     </main>
   );
