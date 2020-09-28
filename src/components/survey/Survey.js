@@ -21,8 +21,23 @@ const Survey = (props) => {
     setCurrentMusic(() => quizMusic(currentQuestion));
     setCurrentBg(() => surveyBackgroundColor(currentQuestion));
     if (currentQuestion > 10) {
-      props.history.push("/thankyou");
+      const finalScores = JSON.parse(sessionStorage.getItem("scores"));
+      const postFinalScores = async (array) => {
+        await fetch(`/.netlify/functions/addScores`, {
+          method: "POST",
+          body: JSON.stringify({ scores: array }),
+        })
+          // debug logs
+          .then((res) => res.json())
+          .then((data) => {
+            //console.log(data);
+            props.history.push("/thankyou");
+          })
+          .catch(console.error);
+      };
+      postFinalScores(finalScores);
     }
+
     // eslint-disable-next-line
   }, [currentQuestion]);
 
