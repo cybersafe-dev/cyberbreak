@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LandingHeader from "./LandingHeader";
-import Ptsb from "../../assets/images/blk-ptsb.svg";
+import Ptsb from "../../assets/images/wyt-ptsb.svg";
 import HappyHappyGame from "../../assets/sounds/Happy Happy Game Show.mp3";
 import { click } from "../../utils/click";
 import "./Landing.css";
 
-const Landing = () => {  
+const Landing = () => {
   const ref = React.createRef();
   return (
     <main className="landing-container">
