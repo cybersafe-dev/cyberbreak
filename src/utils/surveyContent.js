@@ -146,7 +146,7 @@ export const surveyContent = {
       "As a family, we have talked about the fact that some content online is not appropriate for children and age restrictions are important.",
     a1: {
       answer: "Yes",
-      points: 3,
+      points: 2,
     },
     a2: {
       answer: "No",

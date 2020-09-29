@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 2rem;
 }
 
@@ -80,6 +80,26 @@
   margin-right: 1rem;
 }
 
+.link-btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0.5rem 0 0.5rem;
+  width: 8rem;
+}
+
+.btn-link {
+  font-size: 1rem;
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+}
+
 .subscribe {
   background-color: #74d47e;
   border: none;
@@ -109,7 +129,7 @@
 .music-btn {
   background-color: #74d47e;
   border: none;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 50%;
   box-shadow: -4px -4px 12px 0px #a0e8a8, 6px 6px 12px 0px #4bb456;
   cursor: pointer;
@@ -146,6 +166,11 @@
     justify-content: space-between;
   }
 
+  .link-btns {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    order: 3;
+  }
+
   .trophy {
     width: 200px;
     transform: translate(-50px, 0);
@@ -162,7 +187,7 @@
     width: 100%;
     margin: 0 0 1rem 0;
     font-size: 1.3rem;
-    text-align: justify;
+    text-align: left;
     padding: 0;
     line-height: 1.5rem;
   }

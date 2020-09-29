@@ -8,6 +8,9 @@ import "./Landing.css";
 
 const Landing = () => {
   const ref = React.createRef();
+  if (!HappyHappyGame) {
+    return <h1>loading</h1>
+  }
   return (
     <main className="landing-container">
       <LandingHeader />
@@ -21,7 +24,7 @@ const Landing = () => {
       <Link to="/form" className="btn" onClick={() => click.play()}>
         Lets Go!
       </Link>
-      {HappyHappyGame && <audio ref={ref} src={HappyHappyGame} autoPlay loop={true} />}
+      <audio ref={ref} src={HappyHappyGame} autoPlay loop={true} />
     </main>
   );
 };
