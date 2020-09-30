@@ -36,11 +36,7 @@
   align-self: flex-end;
   margin: 0 3rem 3rem 0;
 }
-.ptsb-logo {
-  bottom: 1rem;
-  left: 1rem;
-  position: fixed;
-}
+
 
 /*------- HEADER --------*/
 .landing-header {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LandingHeader from "./LandingHeader";
-import Ptsb from "../../assets/images/wyt-ptsb.svg";
+import Ptsb from "../../assets/images/wyt-ptsb.png";
 import HappyHappyGame from "../../assets/sounds/Happy Happy Game Show.mp3";
 import { click } from "../../utils/click";
 import "./Landing.css";
