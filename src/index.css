@@ -47,6 +47,7 @@ input {
   font-size: 2rem;
   width: 45vw;
   font-family: "Varela Round", sans-serif;
+  z-index: 15;
 }
 
 input::placeholder {

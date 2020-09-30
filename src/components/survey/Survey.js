@@ -23,10 +23,9 @@ const Survey = (props) => {
     setCurrentMusic(() => quizMusic(currentQuestion));
     setCurrentBg(() => surveyBackgroundColor(currentQuestion));
     if (currentQuestion > 10) {
-      setCurrentBg("#a0e8a8");
       const finalScores = JSON.parse(sessionStorage.getItem("scores"));
-      const postFinalScores = async (array) => {
-        await fetch(`/.netlify/functions/addScores`, {
+      const postFinalScores = (array) => {
+        fetch(`/.netlify/functions/addScores`, {
           method: "POST",
           body: JSON.stringify({ scores: array }),
         })
