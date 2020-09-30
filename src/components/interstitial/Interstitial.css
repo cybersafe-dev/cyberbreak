@@ -51,7 +51,7 @@
   background: linear-gradient(90deg, #000, #852B0E, #000);
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: animate 10s linear infinite;
+  animation: animate 12s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }

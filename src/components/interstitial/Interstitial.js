@@ -19,7 +19,7 @@ const Interstitial = (props) => {
   return (
     <main className="interstitial-container">
       <section className="interstitial-text">
-        <span>The quiz will begin any moment...</span>
+        <span>The quiz will begin in a moment...</span>
         <span>click the answer that best fits your family!</span>
       </section>
       <div className="hand-and-boxes">
