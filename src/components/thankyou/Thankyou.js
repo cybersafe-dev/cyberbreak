@@ -6,6 +6,8 @@ import Trophy from "../../assets/images/confetti-cup.svg";
 import MusicModal from "../musicModal/MusicModal";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
+import Ptsb from "../../assets/images/wyt-ptsb.png";
+import Csi from "../../assets/images/csi-logo.png";
 import "./Thankyou.css";
 
 const Thankyou = () => {
@@ -117,6 +119,10 @@ const Thankyou = () => {
           {error && <p className="error-msg">{error}</p>}
         </div>
         <section className="options">
+          <div className="logos-thankyou">
+            <img src={Ptsb} alt="" />
+            <img src={Csi} alt="" />
+          </div>
           <button
             type="submit"
             onClick={handleEmailSubmit}
@@ -124,6 +130,7 @@ const Thankyou = () => {
           >
             Subscribe
           </button>
+
           <section className="link-btns">
             <div className="link-btn">
               <a
@@ -145,7 +152,10 @@ const Thankyou = () => {
               <button
                 type="button"
                 className="music-btn"
-                onClick={() => toggleMusicModalVisible(!musicModalVisible)}
+                onClick={() => {
+                  toggleMusicModalVisible(!musicModalVisible);
+                  click.play();
+                }}
               >
                 <img
                   src={Note}
@@ -156,16 +166,22 @@ const Thankyou = () => {
               <p className="btn-link">Music</p>
             </div>
           </section>
-          <button
-            type="submit"
-            className="subscribe"
-            href="https://cybersafeireland.org"
-            onClick={() => click.play()}
+          <a
+            href="https://cybersafeireland.org/support-us/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Donate
-          </button>
+            <button
+              type="button"
+              className="subscribe"
+              onClick={() => click.play()}
+            >
+              Donate
+            </button>
+          </a>
         </section>
       </form>
+
       <audio ref={ref} src={blueSka} autoPlay loop={true} />
     </main>
   );
