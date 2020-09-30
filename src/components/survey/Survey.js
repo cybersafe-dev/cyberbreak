@@ -23,6 +23,7 @@ const Survey = (props) => {
     setCurrentMusic(() => quizMusic(currentQuestion));
     setCurrentBg(() => surveyBackgroundColor(currentQuestion));
     if (currentQuestion > 10) {
+      setCurrentBg("#a0e8a8");
       const finalScores = JSON.parse(sessionStorage.getItem("scores"));
       const postFinalScores = async (array) => {
         await fetch(`/.netlify/functions/addScores`, {
@@ -33,6 +34,7 @@ const Survey = (props) => {
           .then((res) => res.json())
           .then((data) => {
             // console.log(data);
+            props.history.push("/thankyou");
           })
           .catch((error) => {
             console.error(error);
@@ -40,7 +42,6 @@ const Survey = (props) => {
           });
       };
       postFinalScores(finalScores);
-      props.history.push("/thankyou");
     }
 
     // eslint-disable-next-line
