@@ -48,11 +48,18 @@
 }
 
 .lockchain {
-  height: 600px;
+  height: 750px;
   position: fixed;
-  top: -200px;
+  top: -250px;
   right: 0px;
   z-index: 0;
+}
+
+.csi-logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  height: 7vh;
 }
 
 @media only screen and (max-width: 700px) {
