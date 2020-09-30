@@ -3,7 +3,9 @@ import { surveyContent } from "../../utils/surveyContent";
 import { click } from "../../utils/click";
 import { quizMusic } from "../../utils/music";
 import { surveyBackgroundColor } from "../../utils/surveyBackground";
-import Cyclist from "../../assets/images/cyclist-svg.svg";
+import Cyclist from "../../assets/images/cyclist-svg-less-trees.svg";
+import Ptsb from "../../assets/images/wyt-ptsb.png";
+import Csi from "../../assets/images/csi-logo.png";
 import "./Survey.css";
 
 const Survey = (props) => {
@@ -103,7 +105,13 @@ const Survey = (props) => {
           </button>
         ) : null}
       </section>
-      <p className="fraction">{currentQuestion}/10</p>
+      <section className="bottom-line">
+        <div className="logos">
+          <img src={Ptsb} alt="" />
+          <img src={Csi} alt="" />
+        </div>
+        <p className="fraction">{currentQuestion}/10</p>
+      </section>
       <img src={Cyclist} alt="cycling through trees" className="cyclist-svg" />
       <audio ref={ref} src={currentMusic} autoPlay loop={true} />
     </main>
