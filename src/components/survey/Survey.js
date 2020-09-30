@@ -30,8 +30,7 @@ const Survey = (props) => {
           // debug logs
           .then((res) => res.json())
           .then((data) => {
-            //console.log(data);
-            props.history.push("/thankyou");
+            // console.log(data);
           })
           .catch((error) => {
             console.error(error);
@@ -39,6 +38,7 @@ const Survey = (props) => {
           });
       };
       postFinalScores(finalScores);
+      props.history.push("/thankyou");
     }
 
     // eslint-disable-next-line
