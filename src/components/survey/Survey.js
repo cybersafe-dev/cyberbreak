@@ -5,7 +5,7 @@ import { quizMusic } from "../../utils/music";
 import { surveyBackgroundColor } from "../../utils/surveyBackground";
 import Cyclist from "../../assets/images/cyclist-svg-less-trees.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
-import Csi from "../../assets/images/csi-logo.png";
+import Csi from "../../assets/images/dark-csi-logo.png";
 import Kite from "../../assets/images/kite.svg";
 import "./Survey.css";
 
