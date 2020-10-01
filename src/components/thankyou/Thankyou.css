@@ -18,6 +18,11 @@
   align-items: center;
 }
 
+.form-container {
+  align-self: center;
+  width: 100%;
+}
+
 .email-signup {
   display: flex;
   flex-direction: column;
@@ -78,8 +83,8 @@
   margin: 0;
 }
 .c-logo {
-  padding-top: 1.5rem;
-  height: 6vh;
+  height: 5vh;
+  margin-right: 1rem;
 }
 
 .links {
@@ -159,6 +164,7 @@
     margin: 0 0.1rem 0 0.1rem;
     width: 7rem;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -174,6 +180,7 @@
 
   .results {
     flex-direction: column-reverse;
+    align-self: center;
   }
 
   .options {
@@ -190,6 +197,7 @@
   .logos-thankyou {
     margin: 1rem 0.5rem 1rem 0.5rem;
     order: 4;
+    align-self: center;
   }
 
   .trophy {
@@ -208,7 +216,7 @@
     width: 100%;
     margin: 0 0 1rem 0;
     font-size: 1.3rem;
-    text-align: justify;
+    text-align: left;
     padding: 0;
     line-height: 1.8rem;
   }
@@ -220,4 +228,6 @@
     margin: 1rem 2rem 2rem 2rem;
     font-size: 1.8rem;
   }
+
+
 }

@@ -38,6 +38,7 @@ form {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  align-self: center;
 }
 
 input {
@@ -66,6 +67,8 @@ input::placeholder {
   left: 1rem;
   position: fixed;
 }
+
+
 @media only screen and (max-width: 700px) {
   input {
     width: 90%;
@@ -73,7 +76,7 @@ input::placeholder {
   }
 
   form {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
   .csi-logo {

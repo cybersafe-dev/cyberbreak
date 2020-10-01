@@ -91,6 +91,10 @@ const Thankyou = (props) => {
 
   return (
     <main className="score-container">
+      <div className="logos-thankyou">
+            <img src={Csi} alt="" className="c-logo" />
+            <img src={Ptsb} alt="" />
+          </div>
       <section className="results">
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
@@ -106,7 +110,7 @@ const Thankyou = (props) => {
         </section>
       </section>
       <form className="email-signup">
-        <div>
+        <div className="form-container">
           <p className="blurb">
             If you would like to subscribe to our newsletter please enter your
             email address and click 'Subscribe' below.
@@ -124,10 +128,7 @@ const Thankyou = (props) => {
           {error && <p className="error-msg">{error}</p>}
         </div>
         <section className="options">
-          <div className="logos-thankyou">
-            <img src={Ptsb} alt="" />
-            <img src={Csi} alt="" className="c-logo" />
-          </div>
+          
           <button
             type="submit"
             onClick={handleEmailSubmit}
