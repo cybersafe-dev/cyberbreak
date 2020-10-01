@@ -5,7 +5,8 @@ import { quizMusic } from "../../utils/music";
 import { surveyBackgroundColor } from "../../utils/surveyBackground";
 import Cyclist from "../../assets/images/cyclist-svg-less-trees.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
-import Csi from "../../assets/images/csi-logo.png";
+import Csi from "../../assets/images/dark-csi-logo.png";
+import Kite from "../../assets/images/kite.svg";
 import "./Survey.css";
 
 const Survey = (props) => {
@@ -112,6 +113,7 @@ const Survey = (props) => {
         </div>
         <p className="fraction">{currentQuestion}/10</p>
       </section>
+      <img src={Kite} alt="flying kite" className="kite" />
       <img src={Cyclist} alt="cycling through trees" className="cyclist-svg" />
       <audio ref={ref} src={currentMusic} autoPlay loop={true} />
     </main>
