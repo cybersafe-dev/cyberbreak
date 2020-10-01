@@ -1,14 +1,27 @@
 import React from "react";
 import "./MusicModal.css";
 import xIcon from "../../assets/images/x-icon.svg";
+import { click } from "../../utils/click";
+import blueSka from "../../assets/sounds/Blue Ska.mp3";
 
-const MusicModal = ({ musicModalVisible, toggleMusicModalVisible }) => {
+const MusicModal = (props) => {
+  const ref = React.createRef();
+
   return (
-    <main className="modal-container">
+    <main
+      className="modal-container"
+      onClick={() => {
+        click.play();
+        props.history.push("/thankyou");
+      }}
+    >
       <img
         src={xIcon}
         alt="Close Music Acknowledgements"
-        onClick={() => toggleMusicModalVisible(!musicModalVisible)}
+        onClick={() => {
+          click.play();
+          props.history.push("/thankyou");
+        }}
         className="x-icon"
       />
       <section className="modal-text">
@@ -38,11 +51,6 @@ const MusicModal = ({ musicModalVisible, toggleMusicModalVisible }) => {
           http://creativecommons.org/licenses/by/4.0/
         </p>
         <p>
-          "Android Sock Hop" Kevin MacLeod (incompetech.com) Licensed under
-          Creative Commons: By Attribution 4.0 License
-          http://creativecommons.org/licenses/by/4.0/
-        </p>
-        <p>
           "Kings of Tara" Kevin MacLeod (incompetech.com) Licensed under
           Creative Commons: By Attribution 4.0 License
           http://creativecommons.org/licenses/by/4.0/
@@ -53,6 +61,7 @@ const MusicModal = ({ musicModalVisible, toggleMusicModalVisible }) => {
           http://creativecommons.org/licenses/by/4.0/
         </p>
       </section>
+      <audio ref={ref} src={blueSka} autoPlay loop={true} />
     </main>
   );
 };

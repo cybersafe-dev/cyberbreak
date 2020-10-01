@@ -110,6 +110,7 @@ const Survey = (props) => {
         <div className="logos">
           <img src={Ptsb} alt="" />
           <img src={Csi} alt="" />
+
         </div>
         <p className="fraction">{currentQuestion}/10</p>
       </section>

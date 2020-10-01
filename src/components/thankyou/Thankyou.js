@@ -3,7 +3,7 @@ import { scoreBlurbs } from "../../utils/scoreBlurbs";
 import blueSka from "../../assets/sounds/Blue Ska.mp3";
 import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg";
-import MusicModal from "../musicModal/MusicModal";
+// import MusicModal from "../musicModal/MusicModal";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
@@ -12,14 +12,21 @@ import "./Thankyou.css";
 
 const Thankyou = (props) => {
   const scores = JSON.parse(sessionStorage.getItem("scores"));
-  const [musicModalVisible, toggleMusicModalVisible] = React.useState(false);
+  // const [musicModalVisible, toggleMusicModalVisible] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [error, setError] = React.useState("");
   const [message, setMessage] = React.useState("");
   const ref = React.createRef();
 
+  React.useEffect(() => {
+    setTimeout(() => {
+      setError("");
+    }, 5000);
+  }, [error]);
+
   if (!scores) {
     props.history.push("/");
+    return null;
   }
 
   let finalScore = scores.reduce((acc, num) => {
@@ -84,12 +91,10 @@ const Thankyou = (props) => {
 
   return (
     <main className="score-container">
-      {musicModalVisible && (
-        <MusicModal
-          musicModalVisible={musicModalVisible}
-          toggleMusicModalVisible={toggleMusicModalVisible}
-        />
-      )}
+      <div className="logos-thankyou">
+        <img src={Ptsb} alt="" />
+        <img src={Csi} alt="" className="c-logo" />
+      </div>
       <section className="results">
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
@@ -105,7 +110,7 @@ const Thankyou = (props) => {
         </section>
       </section>
       <form className="email-signup">
-        <div>
+        <div className="form-container">
           <p className="blurb">
             If you would like to subscribe to our newsletter please enter your
             email address and click 'Subscribe' below.
@@ -123,10 +128,6 @@ const Thankyou = (props) => {
           {error && <p className="error-msg">{error}</p>}
         </div>
         <section className="options">
-          <div className="logos-thankyou">
-            <img src={Ptsb} alt="" />
-            <img src={Csi} alt="" className="c-logo" />
-          </div>
           <button
             type="submit"
             onClick={handleEmailSubmit}
@@ -157,8 +158,8 @@ const Thankyou = (props) => {
                 type="button"
                 className="music-btn"
                 onClick={() => {
-                  toggleMusicModalVisible(!musicModalVisible);
                   click.play();
+                  props.history.push("/music");
                 }}
               >
                 <img
