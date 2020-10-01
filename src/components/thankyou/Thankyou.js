@@ -20,14 +20,14 @@ const Thankyou = (props) => {
 
   React.useEffect(() => {
     setTimeout(() => {
-      setError("")
+      setError("");
     }, 5000);
-  }, [error])
+  }, [error]);
 
   if (!scores) {
     props.history.push("/");
-    return null
-  } 
+    return null;
+  }
 
   let finalScore = scores.reduce((acc, num) => {
     return acc + num;
@@ -92,9 +92,9 @@ const Thankyou = (props) => {
   return (
     <main className="score-container">
       <div className="logos-thankyou">
-            <img src={Csi} alt="" className="c-logo" />
-            <img src={Ptsb} alt="" />
-          </div>
+        <img src={Ptsb} alt="" />
+        <img src={Csi} alt="" className="c-logo" />
+      </div>
       <section className="results">
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
@@ -128,7 +128,6 @@ const Thankyou = (props) => {
           {error && <p className="error-msg">{error}</p>}
         </div>
         <section className="options">
-          
           <button
             type="submit"
             onClick={handleEmailSubmit}
@@ -160,7 +159,7 @@ const Thankyou = (props) => {
                 className="music-btn"
                 onClick={() => {
                   click.play();
-                  props.history.push("/music")
+                  props.history.push("/music");
                 }}
               >
                 <img

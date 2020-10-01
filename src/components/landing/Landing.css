@@ -65,18 +65,17 @@
 
 /* --- MOBILE RESPONSIVE --- */
 @media only screen and (max-width: 700px) {
-
   .landing-title {
     margin: 1rem;
     font-size: 3.5rem;
     padding: 0;
-    align-self: center;
+    /* align-self: center; */
   }
   .landing-text {
     width: 90%;
     margin: 1rem;
     font-size: 1.3rem;
-    text-align: justify;
+    text-align: left;
     padding: 0;
     line-height: 2rem;
   }
