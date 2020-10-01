@@ -80,8 +80,8 @@
   }
 
   .lockchain {
-    height: 300px;
-    top: -100px;
+    height: 400px;
+    top: -150px;
     right: 0px;
     z-index: 0;
   }
@@ -90,4 +90,5 @@
     align-self: center;
     margin: 1.5rem 1rem 1.5rem 1rem;
   }
+
 }
