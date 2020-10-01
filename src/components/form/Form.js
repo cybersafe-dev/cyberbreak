@@ -8,13 +8,19 @@ import { click } from "../../utils/click";
 
 const Form = (props) => {
   const [name, setName] = React.useState("");
+  const [error, setError] = React.useState("");
   const ref = React.createRef();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    click.play();
-    sessionStorage.setItem("name", name);
-    props.history.push("/interstitial");
+    if (!name) {
+      setError("Please enter a team name to unlock the quiz!");
+      return;
+    } else {
+      click.play();
+      sessionStorage.setItem("name", name);
+      props.history.push("/interstitial");
+    }
   };
 
   return (
@@ -25,7 +31,7 @@ const Form = (props) => {
           Enter a team name to unlock a fun family quiz to see where you’re at
           right now when it comes to being smart and safe online. Good luck!
         </p>
-        <form >
+        <form>
           <label htmlFor="name">Please enter your name</label>
           <input
             type="text"
@@ -34,7 +40,7 @@ const Form = (props) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-
+          {error && <p className="error-msg">{error}</p>}
           <button
             type="submit"
             onClick={handleFormSubmit}

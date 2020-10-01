@@ -45,6 +45,14 @@
   margin: 1rem 0 1rem 0;
 }
 
+.bottom-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .fraction {
   align-self: flex-end;
   font-family: "Knewave", cursive;
@@ -54,6 +62,14 @@
   margin: 0 5% 0 0;
   padding: 0;
   z-index: 5;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 1rem 1rem;
 }
 
 @media only screen and (max-width: 700px) {
@@ -68,6 +84,17 @@
 
   .response {
     margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .bottom-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .logos {
+    display: none;
   }
 
   .fraction {
