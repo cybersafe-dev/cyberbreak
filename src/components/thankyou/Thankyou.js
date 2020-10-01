@@ -10,13 +10,17 @@ import Ptsb from "../../assets/images/wyt-ptsb.png";
 import Csi from "../../assets/images/csi-logo.png";
 import "./Thankyou.css";
 
-const Thankyou = () => {
+const Thankyou = (props) => {
   const scores = JSON.parse(sessionStorage.getItem("scores"));
   const [musicModalVisible, toggleMusicModalVisible] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [error, setError] = React.useState("");
   const [message, setMessage] = React.useState("");
   const ref = React.createRef();
+
+  if (!scores) {
+    props.history.push("/");
+  }
 
   let finalScore = scores.reduce((acc, num) => {
     return acc + num;
