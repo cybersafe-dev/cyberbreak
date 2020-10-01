@@ -18,9 +18,17 @@ const Thankyou = (props) => {
   const [message, setMessage] = React.useState("");
   const ref = React.createRef();
 
+  React.useEffect(() => {
+    setTimeout(() => {
+      setError("")
+    }, 5000);
+  }, [error])
+
+  console.log({scores})
   if (!scores) {
     props.history.push("/");
-  }
+    return null
+  } 
 
   let finalScore = scores.reduce((acc, num) => {
     return acc + num;
