@@ -7,7 +7,7 @@ import MusicModal from "../musicModal/MusicModal";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
-import Csi from "../../assets/images/csi-logo.png";
+import Csi from "../../assets/images/green-csi-logo.png";
 import "./Thankyou.css";
 
 const Thankyou = () => {
@@ -121,7 +121,7 @@ const Thankyou = () => {
         <section className="options">
           <div className="logos-thankyou">
             <img src={Ptsb} alt="" />
-            <img src={Csi} alt="" />
+            <img src={Csi} alt="" className="c-logo" />
           </div>
           <button
             type="submit"
