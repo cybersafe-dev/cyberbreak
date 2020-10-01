@@ -74,5 +74,13 @@ input::placeholder {
     width: 100%;
     height: auto;
   }
-
+  .csi-logo {
+    position: fixed;
+    top: 2.5rem;
+    left: 1rem;
+    height: 4.5vh;
+  }
+  .ptsb-logo {
+  height: 7vh;
+  }
 }
