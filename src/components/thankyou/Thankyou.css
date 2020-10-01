@@ -80,6 +80,10 @@
   align-items: center;
   margin: 0;
 }
+.c-logo {
+  padding-top: 1.5rem;
+  height: 6vh;
+}
 
 .links {
   text-align: right;
@@ -153,6 +157,7 @@
   text-decoration: underline;
 }
 
+
 @media only screen and (max-width: 1024px) {
   .link-btn {
 
@@ -208,9 +213,9 @@
     width: 100%;
     margin: 0 0 1rem 0;
     font-size: 1.3rem;
-    text-align: left;
+    text-align: justify;
     padding: 0;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
   }
   .email {
     align-self: center;

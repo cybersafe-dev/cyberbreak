@@ -59,6 +59,7 @@ input::placeholder {
   top: 1rem;
   left: 1rem;
   height: 5.5vh;
+  align-items: baseline;
 }
 .ptsb-logo {
   bottom: 1rem;
