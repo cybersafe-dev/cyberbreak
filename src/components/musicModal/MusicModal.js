@@ -8,7 +8,13 @@ const MusicModal = (props) => {
   const ref = React.createRef();
 
   return (
-    <main className="modal-container">
+    <main
+      className="modal-container"
+      onClick={() => {
+        click.play();
+        props.history.push("/thankyou");
+      }}
+    >
       <img
         src={xIcon}
         alt="Close Music Acknowledgements"
