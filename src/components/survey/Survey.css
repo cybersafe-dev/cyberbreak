@@ -22,11 +22,21 @@
   width: auto;
   position: fixed;
   top: 10%;
-  left: 40%;
+  left: 50%;
   animation: 30s infinite alternate flying;
   transition-timing-function: ease-in-out;
-  z-index: 0;
-  
+  z-index: 0; 
+}
+
+.loading-kite {
+  height: 30vh;
+  width: auto;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  animation: 30s infinite alternate flying;
+  transition-timing-function: ease-in-out;
+  z-index: 0; 
 }
 
 @keyframes flying {

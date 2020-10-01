@@ -58,8 +58,15 @@ const Survey = (props) => {
     sessionStorage.setItem("scores", []);
   }
 
-  if (!surveyContent[currentQuestion]) {
-    return <h1>Loading quiz questions...</h1>;
+  if (currentQuestion > 10) {
+    return (
+      <main
+        className="question-container"
+        style={{ backgroundColor: currentBg }}
+      >
+        <img src={Kite} alt="flying kite" className="loading-kite" />
+      </main>
+    );
   }
 
   return (
@@ -110,7 +117,6 @@ const Survey = (props) => {
         <div className="logos">
           <img src={Ptsb} alt="" />
           <img src={Csi} alt="" />
-
         </div>
         <p className="fraction">{currentQuestion}/10</p>
       </section>
