@@ -25,7 +25,6 @@
   align-items: flex-start;
   height: auto;
   flex-grow: 1;
-
 }
 
 .options {
@@ -45,9 +44,7 @@
 .score-title {
   margin: 0;
 }
-/* .blurb {
-  min-width: 50vw;
-} */
+
 
 /* ----ICON---- */
 .trophy-container {
@@ -157,10 +154,8 @@
   text-decoration: underline;
 }
 
-
 @media only screen and (max-width: 1024px) {
   .link-btn {
-
     margin: 0 0.1rem 0 0.1rem;
     width: 7rem;
   }
