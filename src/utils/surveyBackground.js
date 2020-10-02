@@ -22,10 +22,10 @@ export const surveyBackgroundColor = (num) => {
       currentColor = "#308114";
       break;
     case 11:
-      currentColor = "#a0e8a8";
+      currentColor = "#74d47e";
       break;
     default:
-      currentColor = "#a0e8a8";
+      currentColor = "#74d47e";
   }
   return currentColor;
 };

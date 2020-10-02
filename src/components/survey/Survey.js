@@ -6,7 +6,8 @@ import { surveyBackgroundColor } from "../../utils/surveyBackground";
 import { surveyLogoColor } from "../../utils/surveyLogos";
 import Cyclist from "../../assets/images/cyclist-svg-less-trees.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
-// import Csi from "../../assets/images/csi-logo.png";
+
+import Kite from "../../assets/images/kite.svg";
 import "./Survey.css";
 
 const Survey = (props) => {
@@ -61,8 +62,15 @@ console.log(currentLogo)
     sessionStorage.setItem("scores", []);
   }
 
-  if (!surveyContent[currentQuestion]) {
-    return <h1>Loading quiz questions...</h1>;
+  if (currentQuestion > 10) {
+    return (
+      <main
+        className="question-container"
+        style={{ backgroundColor: currentBg }}
+      >
+        <img src={Kite} alt="flying kite" className="loading-kite" />
+      </main>
+    );
   }
 
   return (
@@ -111,12 +119,13 @@ console.log(currentLogo)
       </section>
       <section className="bottom-line">
         <div className="logos">
-<img src={Ptsb} alt="" />
+        <img src={Ptsb} alt="" />
         <img src={currentLogo} alt="" />
 
         </div>
         <p className="fraction">{currentQuestion}/10</p>
       </section>
+      <img src={Kite} alt="flying kite" className="kite" />
       <img src={Cyclist} alt="cycling through trees" className="cyclist-svg" />
       <audio ref={ref} src={currentMusic} autoPlay loop={true} />
     </main>

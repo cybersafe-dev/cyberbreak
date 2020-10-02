@@ -17,16 +17,57 @@
   width: 100%;
 }
 
+.kite {
+  height: 30vh;
+  width: auto;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  animation: 30s infinite alternate flying;
+  transition-timing-function: ease-in-out;
+  z-index: 0; 
+}
+
+.loading-kite {
+  height: 30vh;
+  width: auto;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  animation: 30s infinite alternate flying;
+  transition-timing-function: ease-in-out;
+  z-index: 0; 
+}
+
+@keyframes flying {
+	0% , 100% {
+    transform: translate(0px, 0px) rotate(0deg)
+	}
+	25% {
+    transform: translate(-400px, -20px) 
+
+	}
+	50% {
+    transform: translate(-600px, -25px) rotate(10deg)
+
+	}
+	75% {
+    transform: translate(-350px, -30px) 
+	
+	}
+}
+
 .statement {
   font-family: "Varela Round", sans-serif;
   color: white;
   font-size: 2rem;
   width: 90%;
   text-align: center;
+  z-index: 1;
 }
 
 .responses {
-  width: 90%;
+  width: 80%;
   z-index: 5;
   padding: 0;
   margin: 0;
@@ -59,7 +100,7 @@
   color: white;
   font-size: 5rem;
   font-weight: lighter;
-  margin: 0 5% 0 0;
+  margin: 0 1.5rem 0 0;
   padding: 0;
   z-index: 5;
 }
@@ -68,7 +109,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 0 1rem 1rem;
 }
 
@@ -80,6 +121,10 @@
 
   .statement {
     font-size: 1.5rem;
+  }
+
+  .responses {
+    width: 90%;
   }
 
   .response {
