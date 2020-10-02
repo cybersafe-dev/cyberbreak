@@ -20,7 +20,7 @@ const Landing = () => {
       <Link to="/form" className="btn" onClick={() => click.play()}>
         Lets Go!
       </Link>
-      <img src={Ptsb} alt="" className="ptsb-logo" />
+      <img src={Ptsb} alt="" className="land-ptsb-logo" />
       <audio ref={ref} src={HappyHappyGame} autoPlay loop={true} />
     </main>
   );

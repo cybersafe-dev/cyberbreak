@@ -25,7 +25,7 @@
   left: 50%;
   animation: 30s infinite alternate flying;
   transition-timing-function: ease-in-out;
-  z-index: 0; 
+  z-index: 0;
 }
 
 .loading-kite {
@@ -36,7 +36,7 @@
   left: 50%;
   animation: 30s infinite alternate flying;
   transition-timing-function: ease-in-out;
-  z-index: 0; 
+  z-index: 0;
 }
 
 @keyframes flying {
@@ -44,7 +44,7 @@
     transform: translate(0px, 0px) rotate(0deg)
 	}
 	25% {
-    transform: translate(-400px, -20px) 
+    transform: translate(-400px, -20px)
 
 	}
 	50% {
@@ -52,8 +52,8 @@
 
 	}
 	75% {
-    transform: translate(-350px, -30px) 
-	
+    transform: translate(-350px, -30px)
+
 	}
 }
 
@@ -107,10 +107,19 @@
 
 .logos {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
   margin: 0 0 1rem 1rem;
+}
+
+.csi {
+  height: 5.5vh;
+  margin-right: 0.3rem;
+}
+.ptsb {
+  height: 11vh;
+  margin: 0;
 }
 
 @media only screen and (max-width: 700px) {
@@ -145,4 +154,5 @@
   .fraction {
     font-size: 3rem;
   }
+
 }
