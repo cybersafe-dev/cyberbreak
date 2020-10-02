@@ -38,6 +38,7 @@ const Thankyou = (props) => {
   };
 
   let scoreBlurb = "";
+  let scoreBlurbTwo = "";
   switch (true) {
     case finalScore >= 20:
       scoreBlurb = scoreBlurbs.first;
@@ -50,6 +51,7 @@ const Thankyou = (props) => {
       break;
     default:
       scoreBlurb = scoreBlurbs.fourth;
+      scoreBlurbTwo = scoreBlurbs.fourthTwo;
   }
 
   const handleEmailSubmit = async (e) => {
@@ -91,9 +93,9 @@ const Thankyou = (props) => {
 
   return (
     <main className="score-container">
-      <div className="logos-thankyou">
-        <img src={Ptsb} alt="" />
+      <div className="logos-thankyou"> 
         <img src={Csi} alt="" className="c-logo" />
+        <img src={Ptsb} alt="" className="p-logo-scores" />
       </div>
       <section className="results">
         <section className="score-content">
@@ -102,7 +104,11 @@ const Thankyou = (props) => {
             Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber
             Break!
           </p>
-          <p className="blurb">{scoreBlurb}</p>
+          <p className="score-blurb">{scoreBlurb}</p>
+
+          {scoreBlurbTwo ? (
+            <p className="score-blurb">{scoreBlurbTwo}</p>
+          ) : null}
         </section>
         <section className="trophy-container">
           <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
