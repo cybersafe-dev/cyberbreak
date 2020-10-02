@@ -119,7 +119,7 @@ console.log(currentLogo)
       </section>
       <section className="bottom-line">
         <div className="logos">
-        <img src={Ptsb} alt="" />
+        <img src={Ptsb} alt="" className="ptsb"/>
         <img src={currentLogo} alt="" className="csi"/>
 
         </div>
