@@ -37,6 +37,12 @@
   margin: 0 3rem 3rem 0;
 }
 
+.land-ptsb-logo {
+  bottom: 3rem;
+  left: 45%;
+  position: fixed;
+  height: 12vh;
+}
 
 /*------- HEADER --------*/
 .landing-header {
@@ -87,5 +93,10 @@
   .clouds, .sun  {
     height: 20vh;
     padding: 0;
+  }
+  .land-ptsb-logo {
+    bottom: 1rem;
+    left: 1rem;
+    height: 8vh;
   }
 }

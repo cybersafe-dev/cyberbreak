@@ -3,9 +3,9 @@ import { surveyContent } from "../../utils/surveyContent";
 import { click } from "../../utils/click";
 import { quizMusic } from "../../utils/music";
 import { surveyBackgroundColor } from "../../utils/surveyBackground";
+import { surveyLogoColor } from "../../utils/surveyLogos";
 import Cyclist from "../../assets/images/cyclist-svg-less-trees.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
-import Csi from "../../assets/images/dark-csi-logo.png";
 import Kite from "../../assets/images/kite.svg";
 import "./Survey.css";
 
@@ -14,6 +14,7 @@ const Survey = (props) => {
   const [scores, setScores] = React.useState([]);
   const [currentMusic, setCurrentMusic] = React.useState(null);
   const [currentBg, setCurrentBg] = React.useState(null);
+  const [currentLogo, setCurrentLogo] = React.useState(null);
   const ref = React.createRef();
 
   React.useEffect(() => {
@@ -23,6 +24,8 @@ const Survey = (props) => {
   React.useEffect(() => {
     setCurrentMusic(() => quizMusic(currentQuestion));
     setCurrentBg(() => surveyBackgroundColor(currentQuestion));
+    setCurrentLogo(() => surveyLogoColor(currentQuestion));
+console.log(currentLogo)
     if (currentQuestion > 10) {
       const finalScores = JSON.parse(sessionStorage.getItem("scores"));
       const postFinalScores = (array) => {
@@ -115,8 +118,9 @@ const Survey = (props) => {
       </section>
       <section className="bottom-line">
         <div className="logos">
-          <img src={Ptsb} alt="" />
-          <img src={Csi} alt="" />
+        <img src={Ptsb} alt="" className="ptsb"/>
+        <img src={currentLogo} alt="" className="csi"/>
+
         </div>
         <p className="fraction">{currentQuestion}/10</p>
       </section>
@@ -126,5 +130,6 @@ const Survey = (props) => {
     </main>
   );
 };
+
 
 export default Survey;
