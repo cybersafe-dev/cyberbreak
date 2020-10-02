@@ -38,6 +38,7 @@ const Thankyou = (props) => {
   };
 
   let scoreBlurb = "";
+  let scoreBlurbTwo = "";
   switch (true) {
     case finalScore >= 20:
       scoreBlurb = scoreBlurbs.first;
@@ -50,6 +51,7 @@ const Thankyou = (props) => {
       break;
     default:
       scoreBlurb = scoreBlurbs.fourth;
+      scoreBlurbTwo = scoreBlurbs.fourthTwo;
   }
 
   const handleEmailSubmit = async (e) => {
@@ -91,18 +93,22 @@ const Thankyou = (props) => {
 
   return (
     <main className="score-container">
-      <div className="logos-thankyou">
-        <img src={Ptsb} alt="" />
+      <div className="logos-thankyou"> 
         <img src={Csi} alt="" className="c-logo" />
+        <img src={Ptsb} alt="" className="p-logo-scores" />
       </div>
       <section className="results">
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
-          <p className="blurb">
+          <p className="score-blurb">
             Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber
             Break!
           </p>
-          <p className="blurb">{scoreBlurb}</p>
+          <p className="score-blurb">{scoreBlurb}</p>
+
+          {scoreBlurbTwo ? (
+            <p className="score-blurb">{scoreBlurbTwo}</p>
+          ) : null}
         </section>
         <section className="trophy-container">
           <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
@@ -112,7 +118,7 @@ const Thankyou = (props) => {
       <form className="email-signup">
         <div className="form-container">
           <p className="blurb">
-            If you would like to subscribe to our newsletter please enter your
+            If you would like to subscribe to the CyberSafeIreland newsletter please enter your
             email address and click 'Subscribe' below.
           </p>
           <label htmlFor="email">Please enter your email address</label>
@@ -172,7 +178,7 @@ const Thankyou = (props) => {
             </div>
           </section>
           <a
-            href="https://cybersafeireland.org/support-us/"
+            href="https://www.justgiving.com/cybersafeireland"
             target="_blank"
             rel="noopener noreferrer"
           >
