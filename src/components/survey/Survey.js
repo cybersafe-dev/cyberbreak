@@ -120,7 +120,7 @@ console.log(currentLogo)
       <section className="bottom-line">
         <div className="logos">
         <img src={Ptsb} alt="" />
-        <img src={currentLogo} alt="" />
+        <img src={currentLogo} alt="" className="csi"/>
 
         </div>
         <p className="fraction">{currentQuestion}/10</p>
