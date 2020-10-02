@@ -100,7 +100,7 @@ const Thankyou = (props) => {
       <section className="results">
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
-          <p className="blurb">
+          <p className="score-blurb">
             Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber
             Break!
           </p>
@@ -118,7 +118,7 @@ const Thankyou = (props) => {
       <form className="email-signup">
         <div className="form-container">
           <p className="blurb">
-            If you would like to subscribe to our newsletter please enter your
+            If you would like to subscribe to the CyberSafeIreland newsletter please enter your
             email address and click 'Subscribe' below.
           </p>
           <label htmlFor="email">Please enter your email address</label>
@@ -178,7 +178,7 @@ const Thankyou = (props) => {
             </div>
           </section>
           <a
-            href="https://cybersafeireland.org/support-us/"
+            href="https://www.justgiving.com/cybersafeireland"
             target="_blank"
             rel="noopener noreferrer"
           >
