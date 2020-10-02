@@ -6,7 +6,7 @@ import { surveyBackgroundColor } from "../../utils/surveyBackground";
 import { surveyLogoColor } from "../../utils/surveyLogos";
 import Cyclist from "../../assets/images/cyclist-svg-less-trees.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
-
+import Clouds from "../../assets/images/cloud-logo.svg";
 import Kite from "../../assets/images/kite.svg";
 import "./Survey.css";
 
@@ -68,6 +68,7 @@ console.log(currentLogo)
         className="question-container"
         style={{ backgroundColor: currentBg }}
       >
+        <img src={Clouds} alt="clouds" className="clouds" />
         <img src={Kite} alt="flying kite" className="loading-kite" />
       </main>
     );
