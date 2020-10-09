@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-//import ReactGA from 'react-ga';
 import Analytics from "react-router-ga";
 
 import Landing from "./components/landing/Landing";
@@ -11,9 +10,6 @@ import Thankyou from "./components/thankyou/Thankyou";
 import Survey from "./components/survey/Survey";
 import Interstitial from "./components/interstitial/Interstitial";
 import MusicModal from "./components/musicModal/MusicModal";
-
-// ReactGA.initialize('UA-174511934-1');
-// ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   return (
