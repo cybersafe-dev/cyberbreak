@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from 'history';
+// import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 
 import Landing from "./components/landing/Landing";
@@ -12,21 +12,23 @@ import Survey from "./components/survey/Survey";
 import Interstitial from "./components/interstitial/Interstitial";
 import MusicModal from "./components/musicModal/MusicModal";
 
-const history = createBrowserHistory();
+// const history = createBrowserHistory();
 
-const trackingId = "UA-174511934-1"; 
-ReactGA.initialize(trackingId);
+// const trackingId = "UA-174511934-1"; 
+// ReactGA.initialize(trackingId);
 
-history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
-});
+// history.listen(location => {
+//   ReactGA.set({ page: location.pathname }); // Update the user's current page
+//   ReactGA.pageview(location.pathname); // Record a pageview for the given page
+// });
 
+ReactGA.initialize('UA-174511934-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 const App = () => {
   return (
-    <BrowserRouter history={history}>
+    <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Landing} />
         <Route path="/form" component={Form} />
