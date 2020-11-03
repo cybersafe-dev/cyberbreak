@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LandingHeader from "./LandingHeader";
-import Ptsb from "../../assets/images/wyt-ptsb.png";
 import HappyHappyGame from "../../assets/sounds/Happy Happy Game Show.mp3";
 import { click } from "../../utils/click";
 import "./Landing.css";
@@ -19,7 +18,10 @@ const Landing = () => {
       <Link to="/form" className="btn" onClick={() => click.play()}>
         Lets Go!
       </Link>
-      <img src={Ptsb} alt="" className="land-ptsb-logo" />
+      {/* 
+      Partner branding logos may be replaced later
+      <img src={Ptsb} alt="" className="land-ptsb-logo" /> 
+      */}
       <audio ref={ref} src={HappyHappyGame} autoPlay loop={true} />
     </main>
   );
