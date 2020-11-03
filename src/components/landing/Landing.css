@@ -10,6 +10,7 @@
 
 }
 .landing-title {
+  font-size: 4rem;
   margin: 0 4rem;
   padding: 0 3rem;
   flex-direction: column;

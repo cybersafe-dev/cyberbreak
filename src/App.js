@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Analytics from "react-router-ga";
 
 import Landing from "./components/landing/Landing";
 import Form from "./components/form/Form";
@@ -13,15 +14,17 @@ import MusicModal from "./components/musicModal/MusicModal";
 const App = () => {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={Landing} />
-        <Route path="/form" component={Form} />
-        <Route path="/interstitial" component={Interstitial} />
-        <Route path="/survey" component={Survey} />
-        <Route path="/thankyou" component={Thankyou} />
-        <Route path="/music" component={MusicModal} />
-        <Route component={Error} />˝
-      </Switch>
+      <Analytics id="UA-174511934-1">
+        <Switch>
+          <Route path="/" exact component={Landing} />
+          <Route path="/form" component={Form} />
+          <Route path="/interstitial" component={Interstitial} />
+          <Route path="/survey" component={Survey} />
+          <Route path="/thankyou" component={Thankyou} />
+          <Route path="/music" component={MusicModal} />
+          <Route component={Error} />˝
+        </Switch>
+      </Analytics>
     </BrowserRouter>
   );
 };

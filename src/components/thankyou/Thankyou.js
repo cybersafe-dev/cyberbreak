@@ -3,7 +3,6 @@ import { scoreBlurbs } from "../../utils/scoreBlurbs";
 import blueSka from "../../assets/sounds/Blue Ska.mp3";
 import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg";
-// import MusicModal from "../musicModal/MusicModal";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
@@ -12,7 +11,6 @@ import "./Thankyou.css";
 
 const Thankyou = (props) => {
   const scores = JSON.parse(sessionStorage.getItem("scores"));
-  // const [musicModalVisible, toggleMusicModalVisible] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [error, setError] = React.useState("");
   const [message, setMessage] = React.useState("");
