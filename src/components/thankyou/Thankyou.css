@@ -15,7 +15,8 @@
 .results {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
+  margin-left: -5rem;
 }
 
 .form-container {
@@ -44,17 +45,16 @@
 /* ----TEXT---- */
 .score-content {
   flex-direction: column;
-  align-items: flex-start;
-  z-index: 2;
+  padding: 3rem 2rem;
 }
 .score-title {
   margin: 0;
 }
 .score-blurb {
-  font-size: 1.3rem;
-  max-width: 65vw;
+  font-size: 1.2rem;
+  max-width: 60vw;
   margin-top: 0.5rem;
-
+  text-align: justify;
 }
 .blurb {
   margin-top: 0.5rem;
@@ -66,14 +66,12 @@
   font-size: 0.75rem;
 }
 
-
-
 /* ----ICON---- */
 .trophy-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .score {
@@ -84,25 +82,22 @@
   z-index: 2;
 }
 
-.arrow-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 .arrow {
     z-index: 0;
     position: relative;
-    margin: 0;
-
-    animation: pulse 4s infinite;
+    top: 5rem;
+    animation: pulse 7s infinite;
 }
   @keyframes pulse {
+  50% {
+      opacity: 5%
+    }
+  100% {
+    opacity: 80%
+    }
   0% {
     opacity: 100%
-  }
-  100% {
-  opacity: 10%
-  }
+    }
 }
 
 
@@ -253,6 +248,9 @@
     transform: translate(-50px, 0);
     font-size: 2rem;
     text-align: center;
+  }
+  .arrow {
+    top: -1rem;
   }
 
   .score-blurb {

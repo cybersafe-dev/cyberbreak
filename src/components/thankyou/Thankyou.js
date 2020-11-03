@@ -96,13 +96,10 @@ const Thankyou = (props) => {
         <img src={Csi} alt="" className="c-logo" />
         <img src={Ptsb} alt="" className="p-logo-scores" />
       </div>
-      <section className="results">
-      <section className="arrow-container">
+        <section className="results">
         <img src={Arrow} alt="arrow" className="arrow" />
-        </section>
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
-
           <p className="score-blurb">{scoreBlurb}</p>
           {scoreBlurbTwo ? (
             <p className="score-blurb">{scoreBlurbTwo}</p>

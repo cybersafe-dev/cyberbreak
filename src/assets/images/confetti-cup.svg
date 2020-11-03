@@ -2,7 +2,7 @@
   <style>
     #confetti {
       padding-bottom: 19rem;
-      animation: blinker 2s linear infinite;
+      animation: blinker 1s linear infinite;
       z-index: 0;
     }
 
