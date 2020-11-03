@@ -5,6 +5,7 @@ import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
+import Arrow from "../../assets/images/arrow.svg"
 import Ptsb from "../../assets/images/wyt-ptsb.png";
 import Csi from "../../assets/images/green-csi-logo.png";
 import "./Thankyou.css";
@@ -96,8 +97,12 @@ const Thankyou = (props) => {
         <img src={Ptsb} alt="" className="p-logo-scores" />
       </div>
       <section className="results">
+      <section className="arrow-container">
+        <img src={Arrow} alt="arrow" className="arrow" />
+        </section>
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
+
           <p className="score-blurb">{scoreBlurb}</p>
           {scoreBlurbTwo ? (
             <p className="score-blurb">{scoreBlurbTwo}</p>
@@ -110,9 +115,13 @@ const Thankyou = (props) => {
           <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
           <img src={Trophy} alt="trophy" className="trophy" />
         </section>
+
       </section>
+
       <form className="email-signup">
+
         <div className="form-container">
+
           <p className="blurb">
             Please subscribe to our newsletter* by entering your email address and clicking subscribe below.
           </p>

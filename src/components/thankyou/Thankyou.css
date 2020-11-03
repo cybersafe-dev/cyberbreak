@@ -45,6 +45,7 @@
 .score-content {
   flex-direction: column;
   align-items: flex-start;
+  z-index: 2;
 }
 .score-title {
   margin: 0;
@@ -53,6 +54,7 @@
   font-size: 1.3rem;
   max-width: 65vw;
   margin-top: 0.5rem;
+
 }
 .blurb {
   margin-top: 0.5rem;
@@ -81,6 +83,28 @@
   font-family: "Carter One", cursive;
   z-index: 2;
 }
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.arrow {
+    z-index: 0;
+    position: relative;
+    margin: 0;
+
+    animation: pulse 4s infinite;
+}
+  @keyframes pulse {
+  0% {
+    opacity: 100%
+  }
+  100% {
+  opacity: 10%
+  }
+}
+
 
 /* -----LINKS----- */
 
