@@ -33,6 +33,10 @@
   flex-grow: 1;
 }
 
+.email {
+  width: 53vw;
+}
+
 .options {
   width: 100%;
   display: flex;
@@ -259,7 +263,6 @@
 
   .score-blurb {
     font-size: 1.3rem;
-    /* text-align: left; */
     max-width: 90%;
   }
 
@@ -280,6 +283,7 @@
   }
   .email {
     align-self: center;
+    width: 80vw;
   }
   .subscribe {
     align-self: center;

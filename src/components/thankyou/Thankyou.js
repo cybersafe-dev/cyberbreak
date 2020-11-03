@@ -112,13 +112,10 @@ const Thankyou = (props) => {
           <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
           <img src={Trophy} alt="trophy" className="trophy" />
         </section>
-
       </section>
 
       <form className="email-signup">
-
         <div className="form-container">
-
           <p className="blurb">
             Please subscribe to our newsletter* by entering your email address and clicking subscribe below.
           </p>
