@@ -13,9 +13,8 @@ const Landing = () => {
       <LandingHeader />
       <h1 className="landing-title">Cyber Break</h1>
       <p className="landing-text">
-        Welcome! We are delighted you are interested in participating in the
-        first ever CyberSafeIreland Cyber Break, by disconnecting from devices
-        and the online world to reconnect with your family for a whole 24 hours!
+        Are you a CyberSafe Family? Are you sure? Take our fun family quiz to
+        see how safe you really are!
       </p>
       <Link to="/form" className="btn" onClick={() => click.play()}>
         Lets Go!
