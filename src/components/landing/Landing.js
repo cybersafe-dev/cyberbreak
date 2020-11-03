@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <main className="landing-container">
       <LandingHeader />
-      <h1 className="landing-title">Cyber Break</h1>
+      <h1 className="landing-title">CyberSafe Family Quiz</h1>
       <p className="landing-text">
         Are you a CyberSafe Family? Are you sure? Take our fun family quiz to
         see how safe you really are!
