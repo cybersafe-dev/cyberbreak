@@ -221,8 +221,9 @@
     margin: 0;
   }
   .score-content {
+    text-align: justify;
     padding: 0;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
   .options {
     flex-direction: column;
@@ -258,7 +259,7 @@
 
   .score-blurb {
     font-size: 1.3rem;
-    text-align: left;
+    /* text-align: left; */
     max-width: 90%;
   }
 
