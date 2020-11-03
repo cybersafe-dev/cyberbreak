@@ -93,22 +93,20 @@ const Thankyou = (props) => {
 
   return (
     <main className="score-container">
-      <div className="logos-thankyou"> 
+      <div className="logos-thankyou">
         <img src={Csi} alt="" className="c-logo" />
         <img src={Ptsb} alt="" className="p-logo-scores" />
       </div>
       <section className="results">
         <section className="score-content">
           <h1 className="score-title">Score Card</h1>
-          <p className="score-blurb">
-            Hi {sessionStorage.getItem("name")}, thanks for taking part in Cyber
-            Break!
-          </p>
           <p className="score-blurb">{scoreBlurb}</p>
-
           {scoreBlurbTwo ? (
             <p className="score-blurb">{scoreBlurbTwo}</p>
           ) : null}
+          <p className="score-blurb">
+          Thanks for taking part in the CyberSafe Family Quiz, {sessionStorage.getItem("name")}!
+          </p>
         </section>
         <section className="trophy-container">
           <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
@@ -118,8 +116,7 @@ const Thankyou = (props) => {
       <form className="email-signup">
         <div className="form-container">
           <p className="blurb">
-            If you would like to subscribe to the CyberSafeIreland newsletter please enter your
-            email address and click 'Subscribe' below.
+            Please subscribe to our newsletter* by entering your email address and clicking subscribe.
           </p>
           <label htmlFor="email">Please enter your email address</label>
           <input
@@ -133,6 +130,10 @@ const Thankyou = (props) => {
           {message && <p className="msg">{message}</p>}
           {error && <p className="error-msg">{error}</p>}
         </div>
+        <p className="blurb1">
+          *These are delivered quarterly and are packed full of info about the latest online trends
+          and resources for parents.
+          </p>
         <section className="options">
           <button
             type="submit"

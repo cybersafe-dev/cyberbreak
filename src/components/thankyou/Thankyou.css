@@ -4,7 +4,7 @@
   height: auto;
   min-height: 100vh;
   margin: 0;
-  padding: 3rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,22 +49,29 @@
 .score-title {
   margin: 0;
 }
-
+.score-blurb {
+  font-size: 1.3rem;
+  max-width: 65vw;
+  margin-top: 0.5rem;
+}
 .blurb {
+  margin-top: 0.5rem;
   max-width: 60vw;
   font-size: 1rem;
 }
-
-.score-blurb {
-  font-size: 1.5rem;
-  max-width: 60vw;
+.blurb1 {
+  max-width: 50vw;
+  font-size: 0.75rem;
 }
+
+
 
 /* ----ICON---- */
 .trophy-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-right: 3rem;
 }
 
 .score {
