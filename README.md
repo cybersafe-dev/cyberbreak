@@ -1,8 +1,9 @@
-# CyberSafeIreland CyberBreak
+# CyberSafeIreland CyberSafe Family Quiz
 
-## About Cyber Break
-Cyber Break is a partnership between CyberSafeIreland and Permanent TSB Community Fund, a day where families agree to take a break from online.
-This quiz app is an accompaniment to Cyber Break for families to answer questions in a fun quiz format on their online safety habits and knowledge, and get a basic response to let them know how they're doing in that regard.
+## About
+CyberSafe Family Quiz is a short online quiz for families to answer questions about their online safety habits and knowledge, and get a basic response to let them know how they're doing in that regard.
+
+Originally created as an accompaniment to 'Cyberbreak' - an event where families go offline for 24 hours.
 
 ## Run this app
 1. Clone this repository and navigate to root folder
