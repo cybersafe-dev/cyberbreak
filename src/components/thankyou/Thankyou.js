@@ -176,7 +176,7 @@ const Thankyou = (props) => {
             </div>
           </section>
           <a
-            href="https://www.justgiving.com/cybersafeireland"
+            href="https://www.cybersafeireland.org/support-us/"
             target="_blank"
             rel="noopener noreferrer"
           >
