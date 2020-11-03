@@ -4,7 +4,7 @@
   height: auto;
   min-height: 100vh;
   margin: 0;
-  padding: 3rem;
+  padding: 1rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,8 @@
 .results {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
+  margin-left: -5rem;
 }
 
 .form-container {
@@ -32,6 +33,10 @@
   flex-grow: 1;
 }
 
+.email {
+  width: 53vw;
+}
+
 .options {
   width: 100%;
   display: flex;
@@ -44,20 +49,25 @@
 /* ----TEXT---- */
 .score-content {
   flex-direction: column;
-  align-items: flex-start;
+  padding: 3rem 2rem;
 }
 .score-title {
   margin: 0;
 }
-
+.score-blurb {
+  font-size: 1.2rem;
+  max-width: 60vw;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
 .blurb {
+  margin-top: 0.5rem;
   max-width: 60vw;
   font-size: 1rem;
 }
-
-.score-blurb {
-  font-size: 1.5rem;
-  max-width: 60vw;
+.blurb1 {
+  max-width: 50vw;
+  font-size: 0.75rem;
 }
 
 /* ----ICON---- */
@@ -65,6 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-right: 4rem;
 }
 
 .score {
@@ -74,6 +85,25 @@
   font-family: "Carter One", cursive;
   z-index: 2;
 }
+
+.arrow {
+    z-index: 0;
+    position: relative;
+    top: 5rem;
+    animation: pulse 7s infinite;
+}
+  @keyframes pulse {
+  50% {
+      opacity: 5%
+    }
+  100% {
+    opacity: 80%
+    }
+  0% {
+    opacity: 100%
+    }
+}
+
 
 /* -----LINKS----- */
 
@@ -189,23 +219,25 @@
     font-size: 4rem;
     margin: 0;
   }
-
   .results {
     flex-direction: column-reverse;
-    align-self: center;
+    align-items: center;
+    margin: 0;
   }
-
+  .score-content {
+    text-align: justify;
+    padding: 0;
+    margin-left: 0.5rem;
+  }
   .options {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-
   .link-btns {
     margin: 1rem 0.5rem 1rem 0.5rem;
     order: 3;
   }
-
   .logos-thankyou {
     margin: 1rem 0.5rem 1rem 0.5rem;
     order: 4;
@@ -223,11 +255,15 @@
     font-size: 2rem;
     text-align: center;
   }
+  .arrow {
+    top: -1rem;
+    left: -7rem;
+    height: 20vh;
+  }
 
   .score-blurb {
     font-size: 1.3rem;
-    text-align: justify;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .blurb {
@@ -238,9 +274,16 @@
     padding: 0;
     line-height: 1.8rem;
     max-width: 100%;
+    text-align: justify;
+  }
+  .blurb1 {
+    max-width: 90vw;
+    font-size: 0.9rem;
+    text-align: justify;
   }
   .email {
     align-self: center;
+    width: 80vw;
   }
   .subscribe {
     align-self: center;
