@@ -116,7 +116,7 @@ const Thankyou = (props) => {
       <form className="email-signup">
         <div className="form-container">
           <p className="blurb">
-            Please subscribe to our newsletter* by entering your email address and clicking subscribe.
+            Please subscribe to our newsletter* by entering your email address and clicking subscribe below.
           </p>
           <label htmlFor="email">Please enter your email address</label>
           <input
