@@ -50,7 +50,6 @@
   flex-direction: row;
   align-items: center;
   text-align: justify;
-
 }
 .score-blurb {
   font-size: 1.2rem;
@@ -102,11 +101,12 @@
 
 .c-logo {
   height: 50px;
-  margin-right: 1rem;
+  margin-left: 0.5rem;
 }
 
 .p-logo-scores {
   height: 12vh;
+  display: none;
 }
 
 /* LINKS */
