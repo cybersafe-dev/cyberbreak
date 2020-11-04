@@ -133,7 +133,7 @@ const Thankyou = (props) => {
         </div>
         <p className="blurb1">
           *These are delivered quarterly and are packed full of info about the latest online trends
-          and resources for parents.
+          and resources for parents. In line with GDPR, we ill only use your email address for this purpose.
           </p>
         <section className="options">
           <button
