@@ -12,18 +12,11 @@
   box-sizing: border-box;
 }
 
-.results {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  margin-left: -5rem;
-}
-
+/* FORM */
 .form-container {
   align-self: center;
   width: 100%;
 }
-
 .email-signup {
   display: flex;
   flex-direction: column;
@@ -32,11 +25,9 @@
   height: auto;
   flex-grow: 1;
 }
-
 .email {
   width: 53vw;
 }
-
 .options {
   width: 100%;
   display: flex;
@@ -46,17 +37,23 @@
   margin-top: 2rem;
 }
 
-/* ----TEXT---- */
+/* TEXT */
 .score-content {
   flex-direction: column;
-  padding: 3rem 2rem;
+  align-items: flex-start;
 }
 .score-title {
   margin: 0;
 }
+.results {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: justify;
+}
 .score-blurb {
   font-size: 1.2rem;
-  max-width: 60vw;
+  max-width: 38vw;
   margin-top: 0.5rem;
   text-align: justify;
 }
@@ -70,14 +67,12 @@
   font-size: 0.75rem;
 }
 
-/* ----ICON---- */
+/* ICONS*/
 .trophy-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-right: 4rem;
 }
-
 .score {
   position: relative;
   left: 50%;
@@ -89,7 +84,7 @@
 .arrow {
     z-index: 0;
     position: relative;
-    top: 5rem;
+    top: 3rem;
     animation: pulse 7s infinite;
 }
   @keyframes pulse {
@@ -104,8 +99,17 @@
     }
 }
 
+.c-logo {
+  height: 50px;
+  margin-left: 0.5rem;
+}
 
-/* -----LINKS----- */
+.p-logo-scores {
+  height: 12vh;
+  display: none;
+}
+
+/* LINKS */
 
 .information {
   display: flex;
@@ -121,27 +125,16 @@
   align-items: center;
   margin: 0;
 }
-.c-logo {
-  height: 50px;
-  margin-right: 1rem;
-}
-
-.p-logo-scores {
-  height: 12vh;
-}
-
 .links {
   text-align: right;
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
 }
-
 .link-btns {
   display: flex;
   flex-direction: row;
 }
-
 .link-btn {
   display: flex;
   flex-direction: column;
@@ -150,13 +143,11 @@
   margin: 0 0.5rem 0 0.5rem;
   width: 8rem;
 }
-
 .btn-link {
   font-size: 1rem;
   margin: 0.5rem 0 0 0;
   text-align: center;
 }
-
 .subscribe {
   background-color: #74d47e;
   border: none;
@@ -170,7 +161,24 @@
   font-family: "Knewave", sans-serif;
   cursor: pointer;
 }
+.music-btn {
+  background-color: #74d47e;
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: -4px -4px 12px 0px #a0e8a8, 6px 6px 12px 0px #4bb456;
+  cursor: pointer;
+}
+.note {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.privacy:hover,
+.donate:hover {
+  text-decoration: underline;
+}
 
+/* MESSAGING */
 .msg {
   font-size: 1rem;
   padding: 0;
@@ -183,24 +191,7 @@
   color: red;
 }
 
-.music-btn {
-  background-color: #74d47e;
-  border: none;
-  padding: 1rem;
-  border-radius: 50%;
-  box-shadow: -4px -4px 12px 0px #a0e8a8, 6px 6px 12px 0px #4bb456;
-  cursor: pointer;
-}
 
-.note {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.privacy:hover,
-.donate:hover {
-  text-decoration: underline;
-}
 
 @media only screen and (max-width: 1024px) {
   .link-btn {
@@ -219,36 +210,38 @@
     font-size: 4rem;
     margin: 0;
   }
+
+  /* TEXT */
   .results {
     flex-direction: column-reverse;
-    align-items: center;
-    margin: 0;
-  }
-  .score-content {
-    text-align: justify;
-    padding: 0;
-    margin-left: 0.5rem;
-  }
-  .options {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .link-btns {
-    margin: 1rem 0.5rem 1rem 0.5rem;
-    order: 3;
-  }
-  .logos-thankyou {
-    margin: 1rem 0.5rem 1rem 0.5rem;
-    order: 4;
     align-self: center;
+    text-align: justify;
   }
+  .score-blurb {
+    font-size: 1.3rem;
+    max-width: 100%;
+    margin: 1rem 0;
+    }
+  .blurb {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    padding: 0;
+    line-height: 1.8rem;
+    max-width: 95%;
+    text-align: justify;
+    }
+  .blurb1 {
+    max-width: 90vw;
+    font-size: 0.9rem;
+    text-align: justify;
+    }
 
+/* ICONS */
   .trophy {
     width: 200px;
     transform: translate(-50px, 0);
   }
-
   .score {
     width: 100px;
     transform: translate(-50px, 0);
@@ -260,27 +253,11 @@
     left: -7rem;
     height: 20vh;
   }
-
-  .score-blurb {
-    font-size: 1.3rem;
-    max-width: 90%;
+  .p-logo-scores {
+    height: 50px;
   }
 
-  .blurb {
-    width: 100%;
-    margin: 0 0 1rem 0;
-    font-size: 1rem;
-    text-align: left;
-    padding: 0;
-    line-height: 1.8rem;
-    max-width: 100%;
-    text-align: justify;
-  }
-  .blurb1 {
-    max-width: 90vw;
-    font-size: 0.9rem;
-    text-align: justify;
-  }
+/* INPUT */
   .email {
     align-self: center;
     width: 80vw;
@@ -291,7 +268,20 @@
     font-size: 1.8rem;
   }
 
-  .p-logo-scores {
-    height: 50px;
-  }
+
+  /* LOWER CONTENT */
+    .options {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .link-btns {
+      margin: 1rem 0.5rem 1rem 0.5rem;
+      order: 3;
+    }
+    .logos-thankyou {
+      margin: 1rem 0.5rem 1rem 0.5rem;
+      order: 4;
+      align-self: center;
+    }
 }
