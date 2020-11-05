@@ -21,12 +21,17 @@
   justify-content: center;
 }
 
-.left-column {
+/*  THIS DIV IS CAUSING PROBLEMS FOR CHROME
+<div className="left-column">
+IF ISSUE PERSISTS - RETURN TO JS FILE*/
+
+/* .left-column {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-}
+  background-image: url("../../assets/images/arrow.svg");
+} */
 
 .center-column {
   display: flex;
@@ -83,7 +88,7 @@
   font-size: 0.75rem;
 }
 
-/* ICONS*/
+/* ICONS */
 .trophy-container {
   display: flex;
   align-items: center;
@@ -101,7 +106,7 @@
 .arrow {
   z-index: 0;
   position: relative;
-  bottom: 5rem;
+  bottom: -5rem;
   animation: pulse 7s infinite;
 }
 
