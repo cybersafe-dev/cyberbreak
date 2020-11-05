@@ -4,7 +4,7 @@
   height: auto;
   min-height: 100vh;
   margin: 0;
-  padding: 1rem 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,6 +13,21 @@
 }
 
 /* FORM */
+.three-columns {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .form-container {
   align-self: center;
   width: 100%;
@@ -26,7 +41,8 @@
   flex-grow: 1;
 }
 .email {
-  width: 53vw;
+  width: 40vw;
+  box-sizing: border-box;
 }
 .options {
   width: 100%;
@@ -49,21 +65,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .score-blurb {
-  font-size: 1.2rem;
-  max-width: 38vw;
-  margin-top: 0.5rem;
-  text-align: justify;
+  font-size: 1.5rem;
+  width: 40vw;
+  border: 4px dotted white;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  margin-top: 0;
+  /* text-align: justify; */
 }
 .blurb {
   margin-top: 0.5rem;
-  max-width: 60vw;
-  font-size: 1rem;
+  width: 40vw;
+  font-size: 1.2rem;
 }
 .blurb1 {
-  max-width: 50vw;
+  width: 40vw;
   font-size: 0.75rem;
 }
 
@@ -82,26 +102,26 @@
 }
 
 .arrow {
-    z-index: 0;
-    position: relative;
-    top: 3rem;
-    animation: pulse 7s infinite;
+  z-index: 0;
+  position: relative;
+  bottom: 5rem;
+  animation: pulse 7s infinite;
 }
-  @keyframes pulse {
+@keyframes pulse {
   50% {
-      opacity: 5%
-    }
+    opacity: 5%;
+  }
   100% {
-    opacity: 80%
-    }
+    opacity: 80%;
+  }
   0% {
-    opacity: 100%
-    }
+    opacity: 100%;
+  }
 }
 
 .c-logo {
   height: 50px;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
 }
 
 .p-logo-scores {
@@ -191,8 +211,6 @@
   color: red;
 }
 
-
-
 @media only screen and (max-width: 1024px) {
   .link-btn {
     margin: 0 0.1rem 0 0.1rem;
@@ -221,7 +239,7 @@
     font-size: 1.3rem;
     max-width: 100%;
     margin: 1rem 0;
-    }
+  }
   .blurb {
     width: 100%;
     margin: 0 0 1rem 0;
@@ -230,14 +248,14 @@
     line-height: 1.8rem;
     max-width: 95%;
     text-align: justify;
-    }
+  }
   .blurb1 {
     max-width: 90vw;
     font-size: 0.9rem;
     text-align: justify;
-    }
+  }
 
-/* ICONS */
+  /* ICONS */
   .trophy {
     width: 200px;
     transform: translate(-50px, 0);
@@ -257,7 +275,7 @@
     height: 50px;
   }
 
-/* INPUT */
+  /* INPUT */
   .email {
     align-self: center;
     width: 80vw;
@@ -268,20 +286,19 @@
     font-size: 1.8rem;
   }
 
-
   /* LOWER CONTENT */
-    .options {
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .link-btns {
-      margin: 1rem 0.5rem 1rem 0.5rem;
-      order: 3;
-    }
-    .logos-thankyou {
-      margin: 1rem 0.5rem 1rem 0.5rem;
-      order: 4;
-      align-self: center;
-    }
+  .options {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .link-btns {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    order: 3;
+  }
+  .logos-thankyou {
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    order: 4;
+    align-self: center;
+  }
 }

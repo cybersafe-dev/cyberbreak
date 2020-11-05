@@ -5,7 +5,7 @@ import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
-import Arrow from "../../assets/images/arrow.svg"
+import Arrow from "../../assets/images/arrow.svg";
 import Ptsb from "../../assets/images/wyt-ptsb.png";
 import Csi from "../../assets/images/green-csi-logo.png";
 import "./Thankyou.css";
@@ -96,45 +96,53 @@ const Thankyou = (props) => {
         <img src={Csi} alt="" className="c-logo" />
         <img src={Ptsb} alt="" className="p-logo-scores" />
       </div>
-        <section className="results">
-        <img src={Arrow} alt="arrow" className="arrow" />
-        <section className="score-content">
-          <h1 className="score-title">Score Card</h1>
-          <p className="score-blurb">{scoreBlurb}</p>
-          {scoreBlurbTwo ? (
-            <p className="score-blurb">{scoreBlurbTwo}</p>
-          ) : null}
-          <p className="score-blurb">
-          Thanks for taking part in the CyberSafe Family Quiz, {sessionStorage.getItem("name")}!
-          </p>
-        </section>
-        <section className="trophy-container">
-          <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
-          <img src={Trophy} alt="trophy" className="trophy" />
-        </section>
-      </section>
-
       <form className="email-signup">
-        <div className="form-container">
-          <p className="blurb">
-            Please subscribe to our newsletter* by entering your email address and clicking subscribe below.
-          </p>
-          <label htmlFor="email">Please enter your email address</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="enter email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="email"
-          />
-          {message && <p className="msg">{message}</p>}
-          {error && <p className="error-msg">{error}</p>}
+        <div className="three-columns">
+          <div className="left-column">
+            <img src={Arrow} alt="arrow" className="arrow" />
+          </div>
+
+          <div className="center">
+              <h1 className="score-title">Score Card</h1>
+              <p className="score-blurb">{scoreBlurb}</p>
+              {scoreBlurbTwo ? (
+                <p className="score-blurb">{scoreBlurbTwo}</p>
+              ) : null}
+              <p className="blurb">
+                Thanks for taking part in the CyberSafe Family Quiz,{" "}
+                {sessionStorage.getItem("name")}!
+              </p>
+
+            <p className="blurb">
+              Please subscribe to our newsletter* by entering your email address
+              and clicking subscribe below.
+            </p>
+            <label htmlFor="email">Please enter your email address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="enter email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="email"
+            />
+            {message && <p className="msg">{message}</p>}
+            {error && <p className="error-msg">{error}</p>}
+            <p className="blurb1">
+              *These are delivered quarterly and are packed full of info about
+              the latest online trends and resources for parents. In line with
+              GDPR, we will only use your email address for this purpose.
+            </p>
+          </div>
+
+          <div className="right">
+            <section className="trophy-container">
+              <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
+              <img src={Trophy} alt="trophy" className="trophy" />
+            </section>
+          </div>
         </div>
-        <p className="blurb1">
-          *These are delivered quarterly and are packed full of info about the latest online trends
-          and resources for parents. In line with GDPR, we ill only use your email address for this purpose.
-          </p>
+
         <section className="options">
           <button
             type="submit"
