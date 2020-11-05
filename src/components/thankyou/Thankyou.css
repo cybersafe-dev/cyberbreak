@@ -115,7 +115,7 @@ IF ISSUE PERSISTS - RETURN TO JS FILE*/
     opacity: 5%;
   }
   100% {
-    opacity: 80%;
+    opacity: 100%;
   }
   0% {
     opacity: 100%;
