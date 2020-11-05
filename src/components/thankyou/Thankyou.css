@@ -69,7 +69,7 @@
   padding: 1rem;
   box-sizing: border-box;
   font-weight: bold;
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .blurb {
@@ -94,7 +94,7 @@
   position: relative;
   left: 50%;
   font-size: 3rem;
-  font-family: "Carter One", cursive;
+  font-family: "Fredoka One", cursive;
   z-index: 2;
 }
 
@@ -167,7 +167,7 @@
   color: white;
   box-shadow: -4px -4px 12px 0px #a0e8a8, 6px 6px 12px 0px #4bb456;
   align-self: flex-end;
-  font-family: "Knewave", sans-serif;
+  font-family: "Fredoka One", cursive;
   cursor: pointer;
 }
 
