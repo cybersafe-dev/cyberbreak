@@ -107,19 +107,6 @@ IF ISSUE PERSISTS - RETURN TO JS FILE*/
   z-index: 0;
   position: relative;
   bottom: 5.5rem;
-  -webkit-animation: pulse 7s infinite;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: 5%;
-  }
-  100% {
-    opacity: 100%;
-  }
-  0% {
-    opacity: 100%;
-  }
 }
 
 .c-logo {
