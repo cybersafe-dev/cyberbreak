@@ -5,7 +5,7 @@ import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
-import Arrow from "../../assets/images/arrow.svg";
+import Arrow from "../../assets/images/arrow.png";
 import Csi from "../../assets/images/green-csi-logo.png";
 import "./Thankyou.css";
 
