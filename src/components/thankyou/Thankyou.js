@@ -5,7 +5,7 @@ import { click } from "../../utils/click";
 import Trophy from "../../assets/images/confetti-cup.svg";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
-import Arrow from "../../assets/images/arrow.svg";
+import Arrow from "../../assets/images/arrow-b.svg";
 import Csi from "../../assets/images/green-csi-logo.png";
 import "./Thankyou.css";
 
@@ -95,8 +95,10 @@ const Thankyou = (props) => {
         <img src={Csi} alt="" className="c-logo" />
       </div>
       <form className="email-signup">
-        <div className="three-columns">    
+        <div className="three-columns">
+        <div className="left-column">
             <img src={Arrow} alt="arrow" className="arrow" />
+            </div>
           <div className="center-column">
             <h1 className="score-title">Score Card</h1>
             <p className="score-blurb">{scoreBlurb}</p>

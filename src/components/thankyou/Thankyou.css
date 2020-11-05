@@ -25,13 +25,13 @@
 <div className="left-column">
 IF ISSUE PERSISTS - RETURN TO JS FILE*/
 
-/* .left-column {
+.left-column {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  background-image: url("../../assets/images/arrow.svg");
-} */
+  /* background-image: url("../../assets/images/arrow.svg"); */
+}
 
 .center-column {
   display: flex;
@@ -106,7 +106,7 @@ IF ISSUE PERSISTS - RETURN TO JS FILE*/
 .arrow {
   z-index: 0;
   position: relative;
-  bottom: -5rem;
+  bottom: 5.5rem;
   -webkit-animation: pulse 7s infinite;
 }
 
