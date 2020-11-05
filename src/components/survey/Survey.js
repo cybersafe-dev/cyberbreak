@@ -25,7 +25,6 @@ const Survey = (props) => {
     setCurrentMusic(() => quizMusic(currentQuestion));
     setCurrentBg(() => surveyBackgroundColor(currentQuestion));
     setCurrentLogo(() => surveyLogoColor(currentQuestion));
-console.log(currentLogo)
     if (currentQuestion > 10) {
       const finalScores = JSON.parse(sessionStorage.getItem("scores"));
       const postFinalScores = (array) => {
