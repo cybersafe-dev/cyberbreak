@@ -14,7 +14,7 @@
 
 /* FORM */
 .three-columns {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -28,10 +28,11 @@
   align-items: flex-end;
 }
 
-.form-container {
-  align-self: center;
-  width: 100%;
+.center-column {
+  display: flex;
+  flex-direction: column;
 }
+
 .email-signup {
   display: flex;
   flex-direction: column;
@@ -40,10 +41,12 @@
   height: auto;
   flex-grow: 1;
 }
+
 .email {
   width: 40vw;
   box-sizing: border-box;
 }
+
 .options {
   width: 100%;
   display: flex;
@@ -54,19 +57,11 @@
 }
 
 /* TEXT */
-.score-content {
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 .score-title {
   margin: 0;
 }
-.results {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* text-align: justify; */
-}
+
 .score-blurb {
   font-size: 1.5rem;
   width: 40vw;
@@ -75,13 +70,14 @@
   box-sizing: border-box;
   font-weight: bold;
   margin-top: 0;
-  /* text-align: justify; */
 }
+
 .blurb {
   margin-top: 0.5rem;
   width: 40vw;
   font-size: 1.2rem;
 }
+
 .blurb1 {
   width: 40vw;
   font-size: 0.75rem;
@@ -93,6 +89,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .score {
   position: relative;
   left: 50%;
@@ -107,6 +104,7 @@
   bottom: 5rem;
   animation: pulse 7s infinite;
 }
+
 @keyframes pulse {
   50% {
     opacity: 5%;
@@ -131,13 +129,6 @@
 
 /* LINKS */
 
-.information {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .logos-thankyou {
   display: flex;
   flex-direction: row;
@@ -145,16 +136,12 @@
   align-items: center;
   margin: 0;
 }
-.links {
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  margin-right: 1rem;
-}
+
 .link-btns {
   display: flex;
   flex-direction: row;
 }
+
 .link-btn {
   display: flex;
   flex-direction: column;
@@ -163,11 +150,13 @@
   margin: 0 0.5rem 0 0.5rem;
   width: 8rem;
 }
+
 .btn-link {
   font-size: 1rem;
   margin: 0.5rem 0 0 0;
   text-align: center;
 }
+
 .subscribe {
   background-color: #74d47e;
   border: none;
@@ -181,6 +170,7 @@
   font-family: "Knewave", sans-serif;
   cursor: pointer;
 }
+
 .music-btn {
   background-color: #74d47e;
   border: none;
@@ -189,10 +179,12 @@
   box-shadow: -4px -4px 12px 0px #a0e8a8, 6px 6px 12px 0px #4bb456;
   cursor: pointer;
 }
+
 .note {
   width: 1.5rem;
   height: 1.5rem;
 }
+
 .privacy:hover,
 .donate:hover {
   text-decoration: underline;
@@ -200,13 +192,13 @@
 
 /* MESSAGING */
 .msg {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0;
   color: blue;
 }
 
 .error-msg {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0;
   color: red;
 }
@@ -216,6 +208,10 @@
     margin: 0 0.1rem 0 0.1rem;
     width: 7rem;
   }
+
+  .score-title {
+    font-size: 4rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -224,22 +220,39 @@
     height: auto;
     justify-content: center;
   }
+
+  .three-columns {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column {
+    display: none;
+  }
+
+  .center-column {
+    order: 2;
+    max-width: 80%;
+  }
+
+  .right-column {
+    order: 1;
+  }
+
   .score-title {
-    font-size: 4rem;
+    align-self: center;
+    font-size: 3rem;
     margin: 0;
   }
 
   /* TEXT */
-  .results {
-    flex-direction: column-reverse;
-    align-self: center;
-    text-align: justify;
-  }
   .score-blurb {
     font-size: 1.3rem;
-    max-width: 100%;
+    width: 100%;
     margin: 1rem 0;
   }
+
   .blurb {
     width: 100%;
     margin: 0 0 1rem 0;
@@ -250,7 +263,7 @@
     text-align: justify;
   }
   .blurb1 {
-    max-width: 90vw;
+    width: 100%;
     font-size: 0.9rem;
     text-align: justify;
   }
@@ -278,7 +291,7 @@
   /* INPUT */
   .email {
     align-self: center;
-    width: 80vw;
+    width: 100%;
   }
   .subscribe {
     align-self: center;
@@ -300,5 +313,11 @@
     margin: 1rem 0.5rem 1rem 0.5rem;
     order: 4;
     align-self: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .center-column {
+    max-width: 100%;
   }
 }

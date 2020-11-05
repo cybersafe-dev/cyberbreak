@@ -102,16 +102,16 @@ const Thankyou = (props) => {
             <img src={Arrow} alt="arrow" className="arrow" />
           </div>
 
-          <div className="center">
-              <h1 className="score-title">Score Card</h1>
-              <p className="score-blurb">{scoreBlurb}</p>
-              {scoreBlurbTwo ? (
-                <p className="score-blurb">{scoreBlurbTwo}</p>
-              ) : null}
-              <p className="blurb">
-                Thanks for taking part in the CyberSafe Family Quiz,{" "}
-                {sessionStorage.getItem("name")}!
-              </p>
+          <div className="center-column">
+            <h1 className="score-title">Score Card</h1>
+            <p className="score-blurb">{scoreBlurb}</p>
+            {scoreBlurbTwo ? (
+              <p className="score-blurb">{scoreBlurbTwo}</p>
+            ) : null}
+            <p className="blurb">
+              Thanks for taking part in the CyberSafe Family Quiz,{" "}
+              {sessionStorage.getItem("name")}!
+            </p>
 
             <p className="blurb">
               Please subscribe to our newsletter* by entering your email address
@@ -135,7 +135,7 @@ const Thankyou = (props) => {
             </p>
           </div>
 
-          <div className="right">
+          <div className="right-column">
             <section className="trophy-container">
               <h2 className="score"> {finalScorePercent(finalScore)}%</h2>
               <img src={Trophy} alt="trophy" className="trophy" />
