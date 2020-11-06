@@ -1,7 +1,6 @@
 <svg width="300" height="359" viewBox="0 0 370 429" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     #confetti {
-      padding-bottom: 19rem;
       animation: blinker 1s linear infinite;
       z-index: 0;
     }
