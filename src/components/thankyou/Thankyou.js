@@ -96,9 +96,9 @@ const Thankyou = (props) => {
       </div>
       <form className="email-signup">
         <div className="three-columns">
-        <div className="left-column">
+          <div className="left-column">
             <img src={Arrow} alt="arrow" className="arrow" />
-            </div>
+          </div>
           <div className="center-column">
             <h1 className="score-title">Score Card</h1>
             <p className="score-blurb">{scoreBlurb}</p>
