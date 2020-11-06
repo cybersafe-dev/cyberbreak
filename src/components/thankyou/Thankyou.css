@@ -21,16 +21,11 @@
   justify-content: center;
 }
 
-/*  THIS DIV IS CAUSING PROBLEMS FOR CHROME
-<div className="left-column">
-IF ISSUE PERSISTS - RETURN TO JS FILE*/
-
 .left-column {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  /* background-image: url("../../assets/images/arrow.svg"); */
 }
 
 .center-column {
