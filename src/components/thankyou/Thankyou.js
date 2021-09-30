@@ -92,7 +92,7 @@ const Thankyou = (props) => {
   return (
     <main className="score-container">
      
-        <img src={Csi} alt="" className="csi-logo" />
+        <img src={Csi} alt="" className="logo" />
      
       <form className="email-signup">
         <div className="three-columns">
