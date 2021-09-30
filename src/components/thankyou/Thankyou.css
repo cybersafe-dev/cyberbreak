@@ -120,14 +120,6 @@
 
 /* LINKS */
 
-.logos-thankyou {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0;
-}
-
 .link-btns {
   display: flex;
   flex-direction: row;
@@ -193,6 +185,12 @@
   padding: 0;
   color: red;
 }
+
+
+
+
+
+/* MOBILE */
 
 @media only screen and (max-width: 1024px) {
   .link-btn {
