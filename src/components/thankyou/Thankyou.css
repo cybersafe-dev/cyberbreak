@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
+
 /* FORM */
 .three-columns {
   width: 100%;
@@ -63,7 +64,7 @@
 }
 
 .score-blurb {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 40vw;
   border: 4px dotted white;
   padding: 1rem;
@@ -75,7 +76,7 @@
 .blurb {
   margin-top: 0.5rem;
   width: 40vw;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .blurb1 {
@@ -104,25 +105,8 @@
   bottom: 5.5rem;
 }
 
-.c-logo {
-  height: 50px;
-  /* margin-left: 0.5rem; */
-}
-
-.p-logo-scores {
-  height: 12vh;
-  display: none;
-}
 
 /* LINKS */
-
-.logos-thankyou {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0;
-}
 
 .link-btns {
   display: flex;
@@ -189,6 +173,12 @@
   padding: 0;
   color: red;
 }
+
+
+
+
+
+/* MOBILE */
 
 @media only screen and (max-width: 1024px) {
   .link-btn {
@@ -271,9 +261,7 @@
     left: -7rem;
     height: 20vh;
   }
-  .p-logo-scores {
-    height: 50px;
-  }
+
 
   /* INPUT */
   .email {
@@ -296,15 +284,12 @@
     margin: 1rem 0.5rem 1rem 0.5rem;
     order: 3;
   }
-  .logos-thankyou {
-    margin: 1rem 0.5rem 1rem 0.5rem;
-    order: 4;
-    align-self: center;
-  }
+
 }
 
 @media only screen and (max-width: 700px) {
   .center-column {
     max-width: 100%;
   }
+
 }

@@ -1,8 +1,7 @@
 import React from "react";
 import "./Form.css";
 import Lockchain from "../../assets/images/lockchain.svg";
-import Ptsb from "../../assets/images/wyt-ptsb.png";
-import Csi from "../../assets/images/ora-csi-logo.png";
+import Csi from "../../assets/images/new-csk-wyt.png";
 import HappyHappyGame from "../../assets/sounds/Happy Happy Game Show.mp3";
 import { click } from "../../utils/click";
 
@@ -51,7 +50,6 @@ const Form = (props) => {
         </form>
       </section>
       <img src={Lockchain} className="lockchain" alt="Padlock" />
-      <img src={Ptsb} alt="" className="ptsb-logo" />
       <img src={Csi} alt="" className="csi-logo" />
       <audio ref={ref} src={HappyHappyGame} autoPlay loop={true} />
     </main>
