@@ -107,7 +107,7 @@ const Thankyou = (props) => {
               <p className="score-blurb">{scoreBlurbTwo}</p>
             ) : null}
             <p className="blurb">
-              Thanks for taking part in the CyberSafe Family Quiz,{" "}
+              Thanks for taking part in the CyberSafeKids Family Quiz,{" "}
               {sessionStorage.getItem("name")}!
             </p>
 
@@ -153,7 +153,7 @@ const Thankyou = (props) => {
           <section className="link-btns">
             <div className="link-btn">
               <a
-                href="https://cybersafeireland.org/privacy-policy-and-data-protection"
+                href="https://www.cybersafekids.ie/privacy-policy/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
