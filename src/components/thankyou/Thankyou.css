@@ -84,7 +84,7 @@
   font-size: 0.75rem;
 }
 
-/* ICONS*/
+/* ICONS */
 .trophy-container {
   display: flex;
   align-items: center;
@@ -102,20 +102,7 @@
 .arrow {
   z-index: 0;
   position: relative;
-  bottom: 5rem;
-  animation: pulse 7s infinite;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: 5%;
-  }
-  100% {
-    opacity: 80%;
-  }
-  0% {
-    opacity: 100%;
-  }
+  bottom: 5.5rem;
 }
 
 

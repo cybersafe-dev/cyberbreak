@@ -7,6 +7,7 @@ import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
 import Arrow from "../../assets/images/arrow.png";
 import Csi from "../../assets/images/new-csk-wyt.png";
+
 import "./Thankyou.css";
 
 const Thankyou = (props) => {
@@ -99,7 +100,6 @@ const Thankyou = (props) => {
           <div className="left-column">
             <img src={Arrow} alt="arrow" className="arrow" />
           </div>
-
           <div className="center-column">
             <h1 className="score-title">Score Card</h1>
             <p className="score-blurb">{scoreBlurb}</p>
