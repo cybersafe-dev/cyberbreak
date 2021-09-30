@@ -6,7 +6,7 @@ import Trophy from "../../assets/images/confetti-cup.svg";
 import Note from "../../assets/images/note.svg";
 import Lock from "../../assets/images/white-lock.svg";
 import Arrow from "../../assets/images/arrow.png";
-import Csi from "../../assets/images/green-csi-logo.png";
+import Csi from "../../assets/images/new-csk-wyt.png";
 import "./Thankyou.css";
 
 const Thankyou = (props) => {
@@ -92,7 +92,7 @@ const Thankyou = (props) => {
   return (
     <main className="score-container">
       <div className="logos-thankyou">
-        <img src={Csi} alt="" className="c-logo" />
+        <img src={Csi} alt="" className="csi-logo" />
       </div>
       <form className="email-signup">
         <div className="three-columns">

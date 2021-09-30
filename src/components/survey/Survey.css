@@ -114,13 +114,9 @@
 }
 
 .csi {
-  height: 5.5vh;
+  height: 7rem;
   margin-right: 0.3rem;
-}
-.ptsb {
-  height: 11vh;
-  margin: 0;
-  display: none;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 700px) {

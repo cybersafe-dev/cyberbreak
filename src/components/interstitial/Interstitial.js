@@ -4,8 +4,7 @@ import { click } from "../../utils/click";
 import "./Interstitial.css";
 import hand from "../../assets/images/hand.svg";
 import qBoxes from "../../assets/images/q-boxes.svg";
-import Ptsb from "../../assets/images/wyt-ptsb.png";
-import Csi from "../../assets/images/clay-csi-logo.png";
+import Csi from "../../assets/images/new-csk-blk.png";
 
 const Interstitial = (props) => {
   React.useEffect(() => {
@@ -26,7 +25,6 @@ const Interstitial = (props) => {
         <img src={hand} alt="hand" className="hand" />
         <img src={qBoxes} alt="boxes" className="boxes" />
       </div>
-      <img src={Ptsb} alt="" className="ptsb-logo" />
       <img src={Csi} alt="" className="csi-logo" />
       <audio ref={ref} src={HappyHappyGame} autoPlay loop={true} />
     </main>
