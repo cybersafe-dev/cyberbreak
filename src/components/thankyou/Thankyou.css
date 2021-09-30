@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
+
 /* FORM */
 .three-columns {
   width: 100%;
@@ -296,11 +297,6 @@
     margin: 1rem 0.5rem 1rem 0.5rem;
     order: 3;
   }
-  .logos-thankyou {
-    margin: 1rem 0.5rem 1rem 0.5rem;
-    order: 4;
-    align-self: center;
-  }
 
 }
 
@@ -308,9 +304,5 @@
   .center-column {
     max-width: 100%;
   }
-  .logo {
-    height: 5rem;
-    align-self: flex-end;
-    margin-top: -1rem;
-  }
+
 }
