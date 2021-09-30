@@ -91,9 +91,9 @@ const Thankyou = (props) => {
 
   return (
     <main className="score-container">
-      <div className="logos-thankyou">
+     
         <img src={Csi} alt="" className="csi-logo" />
-      </div>
+     
       <form className="email-signup">
         <div className="three-columns">
           <div className="left-column">
