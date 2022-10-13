@@ -1,5 +1,5 @@
 import React from "react";
-import Clouds from "../../assets/images/logo2021.svg";
+import Clouds from "../../assets/images/og-logo2022.png";
 import Sun from "../../assets/images/sun.svg";
 
 import "./Landing.css";
